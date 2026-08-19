@@ -1,0 +1,14 @@
+author,work,gutenberg_id,source_url,n_words,output_file
+Samuel Taylor Coleridge,The Rime of the Ancient Mariner,151,https://www.gutenberg.org/cache/epub/151/pg151.txt,3822,/Users/sara/Documents/GitHub/understory/data/corpus/samuel_taylor_coleridge_the_rime_of_the_ancient_mariner.txt
+William Wordsworth,Lines Written a Few Miles above Tintern Abbey,9622,https://www.gutenberg.org/cache/epub/9622/pg9622.txt,1229,/Users/sara/Documents/GitHub/understory/data/corpus/william_wordsworth_lines_written_a_few_miles_above_tintern_abbey.txt
+William Wordsworth,Lines Written in Early Spring,9622,https://www.gutenberg.org/cache/epub/9622/pg9622.txt,154,/Users/sara/Documents/GitHub/understory/data/corpus/william_wordsworth_lines_written_in_early_spring.txt
+William Wordsworth,The Tables Turned,9622,https://www.gutenberg.org/cache/epub/9622/pg9622.txt,188,/Users/sara/Documents/GitHub/understory/data/corpus/william_wordsworth_the_tables_turned.txt
+Percy Shelley,Ode to the West Wind,4800,https://www.gutenberg.org/cache/epub/4800/pg4800.txt,548,/Users/sara/Documents/GitHub/understory/data/corpus/percy_shelley_ode_to_the_west_wind.txt
+Percy Shelley,Mont Blanc,4800,https://www.gutenberg.org/cache/epub/4800/pg4800.txt,1092,/Users/sara/Documents/GitHub/understory/data/corpus/percy_shelley_mont_blanc.txt
+Percy Shelley,The Cloud,4800,https://www.gutenberg.org/cache/epub/4800/pg4800.txt,604,/Users/sara/Documents/GitHub/understory/data/corpus/percy_shelley_the_cloud.txt
+Percy Shelley,To a Skylark,4800,https://www.gutenberg.org/cache/epub/4800/pg4800.txt,565,/Users/sara/Documents/GitHub/understory/data/corpus/percy_shelley_to_a_skylark.txt
+Mary Shelley,Frankenstein - Letters 1-4 (Arctic frame),84,https://www.gutenberg.org/cache/epub/84/pg84.txt,5512,/Users/sara/Documents/GitHub/understory/data/corpus/mary_shelley_frankenstein_letters_1_4_arctic_frame.txt
+Mary Shelley,Frankenstein - Chapter 10 (Mont Blanc / glacier scene),84,https://www.gutenberg.org/cache/epub/84/pg84.txt,2357,/Users/sara/Documents/GitHub/understory/data/corpus/mary_shelley_frankenstein_chapter_10_mont_blanc_glacier_scene.txt
+Lord Byron,Childe Harold's Pilgrimage - Canto III (Lake Leman / Alps),5131,https://www.gutenberg.org/cache/epub/5131/pg5131.txt,2507,/Users/sara/Documents/GitHub/understory/data/corpus/lord_byron_childe_harold_s_pilgrimage_canto_iii_lake_leman_alps.txt
+Lord Byron,Manfred - Act I Scene II (Jungfrau cliff),20158,https://www.gutenberg.org/cache/epub/20158/pg20158.txt,980,/Users/sara/Documents/GitHub/understory/data/corpus/lord_byron_manfred_act_i_scene_ii_jungfrau_cliff.txt
+Lord Byron,Manfred - Act II Scene II (Witch of the Alps),20158,https://www.gutenberg.org/cache/epub/20158/pg20158.txt,1513,/Users/sara/Documents/GitHub/understory/data/corpus/lord_byron_manfred_act_ii_scene_ii_witch_of_the_alps.txt
