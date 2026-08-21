@@ -55,6 +55,7 @@ These are the calls that will actually vary between annotators. To keep data con
 | **Negated identity-claim** | Also tag, `FALSE` | "**Bird** thou never wert" |
 | **Wood/stone as material, not entity** | Do NOT tag | "a wooden door" |
 | **"X is a Y" descriptive equation** | Judgment call — tag both if each contributes distinct information | "the **mountain** is a bare perpendicular **rock**" |
+| **"Fire" — elemental vs. literal** | Tag when functioning as one of the classical four elements, paired with or implying earth/air/water. Ordinary combustion fire (mood-metaphor, a hearth, a burning building) stays excluded | "with hurricane, fire, and snow" (*The Cloud*, paired with weather-elements) → tag; "The one was fire and fickleness" (*Manfred*, mood metaphor, no elemental framework) → don't tag |
 
 **General rule when still unsure:** tag it and leave a note in the `notes` column, rather than silently skipping it.
 
