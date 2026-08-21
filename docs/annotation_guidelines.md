@@ -109,7 +109,7 @@ Fill out the blank target columns as follows:
 - `entity_type`: The category label (FLORA, FAUNA, WEATHER, LANDSCAPE, or NATURE).
 - `is_figurative`: TRUE if it is a simile/metaphor, FALSE if literal.
 - `lemma`: The root form of the target span.
-- `notes`: Optional but useful for explaining the reasons behind a tag.
+- `notes`: Optional but useful for clarifying the reasons behind a tag.
 
 
 
