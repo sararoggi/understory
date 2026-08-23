@@ -1,12 +1,13 @@
-# The current file fills in start_char/end_char for the finished manual annotation file, producing the gold-standard dataset (annotated_final.csv) ready for training.
+# The current file fills in start_char/end_char for the finished manual annotation file, producing the gold-standard dataset (final_annotation.csv).
 
 import os
 import sys
 import csv
+import re
 from collections import defaultdict
 
 SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))
- 
+
 if os.path.basename(SCRIPT_DIR) == "scripts":
     PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 else:
@@ -16,17 +17,10 @@ DEFAULT_INPUT = os.path.join(PROJECT_ROOT, "data", "annotations", "manual_annota
 DEFAULT_OUTPUT = os.path.join(PROJECT_ROOT, "data", "annotations", "final_annotation.csv")
 
 
+# Return a list of every start index where span occurs in text, in order - matching span as a standalone word/phrase only, not as a fragment embedded inside a longer word (e.g. "moon" must not match inside "moonlight").
 def find_all_occurrences(text: str, span: str):
-    # Return a list of every start index where span occurs in text, in order.
-    occurrences = []
-    start = 0
-    while True:
-        idx = text.find(span, start)
-        if idx == -1:
-            break
-        occurrences.append(idx)
-        start = idx + 1
-    return occurrences
+    pattern = r"\b" + re.escape(span) + r"\b"
+    return [m.start() for m in re.finditer(pattern, text)]
 
 
 def compute_offsets(input_path: str, output_path: str):
@@ -35,8 +29,7 @@ def compute_offsets(input_path: str, output_path: str):
         fieldnames = reader.fieldnames
         rows = list(reader)
 
-    # Group row indices by (sentence_id, target_span). Rows within a group are kept in their original file order, which is assumed to match the left-to-right order the mentions appear in the text.
-
+    # Group row indices by (sentence_id, target_span). Rows within a group are kept in their original file order.
     groups = defaultdict(list)
     for i, row in enumerate(rows):
         span = (row.get("target_span") or "").strip()
@@ -57,38 +50,36 @@ def compute_offsets(input_path: str, output_path: str):
         n_occ = len(occurrences)
 
         if n_occ == 0:
-            for ridx in row_indices:
-                warnings.append(
-                    f"Row {ridx + 2} (sentence_id={sentence_id}): target_span {span!r} NOT FOUND in sentence_text. Left unfilled -- check for a typo or a mismatched quote/apostrophe character."
-                )
+            for r_idx in row_indices:
+                warnings.append(f"Row {r_idx + 2} [{sentence_id}] {span!r}: NOT FOUND in text.")
             continue
 
+        # Covers both reduplicative idioms (1 row) and genuinely repeated mentions where the counts line up.
         if n_rows == n_occ:
-            # The common case: N tagged rows, N occurrences in the text - including reduplicative idioms with a single row (n_rows=1, n_occ could be 1 or more, handled below) and genuinely repeated independent mentions where the counts line up exactly (e.g. three 'Ice' rows, three 'Ice' occurrences).
             pairs = list(zip(row_indices, occurrences))
 
+        # Reduplicative idiom case: one tagged row, the word repeats in the text (e.g. "peak" in "from peak to peak"). Only one occurrence needs an offset -> take the first.
         elif n_rows == 1 and n_occ > 1:
-            # Reduplicative idiom case: one tagged row, the word repeats in the text (e.g. "peak" in "from peak to peak"). Only one occurrence needs an offset - take the first, since the guideline's intent is a single representative span.
             pairs = [(row_indices[0], occurrences[0])]
 
+        # More tagged rows than the text actually contains - a real problem (duplicate row, or a typo in target_span/sentence_text).
         elif n_rows > n_occ:
-            # More tagged rows than the text actually contains - a real problem (duplicate row, or a typo in target_span/sentence_text).
             warnings.append(
-                f"sentence_id={sentence_id}, span={span!r}: {n_rows} annotated row(s) but only {n_occ} occurrence(s) found in the text. Filled the first {n_occ} row(s) in file order; the remaining {n_rows - n_occ} row(s) left unfilled -- check for an accidental duplicate row."
+                f"[{sentence_id}] {span!r}: {n_rows} rows, only {n_occ} occurrence(s) -- check for a duplicate row."
             )
             pairs = list(zip(row_indices, occurrences))
 
+        # More occurrences than rows, and more than one row -- genuinely ambiguous which occurrences were meant. Match in file order and flag for a manual check.
         else:
-            # n_rows > 1 and n_rows < n_occ: more repeats in the text than tagged rows, but more than one row exists, so it isn't the simple single-idiom case either. Match in file order to the first n_rows occurrences and flag for a manual check, since which occurrences were intended is genuinely ambiguous here.
             warnings.append(
-                f"sentence_id={sentence_id}, span={span!r}: {n_rows} annotated row(s), {n_occ} occurrence(s) in the text - matched to the first {n_rows} occurrences in file order; please verify this is the intended set."
+                f"[{sentence_id}] {span!r}: {n_rows} rows, {n_occ} occurrences -- matched in order, verify."
             )
             pairs = list(zip(row_indices, occurrences[:n_rows]))
 
-        for ridx, start_char in pairs:
+        for r_idx, start_char in pairs:
             end_char = start_char + len(span)
-            rows[ridx]["start_char"] = start_char
-            rows[ridx]["end_char"] = end_char
+            rows[r_idx]["start_char"] = start_char
+            rows[r_idx]["end_char"] = end_char
             processed += 1
 
     with open(output_path, "w", newline="", encoding="utf-8") as f:
@@ -96,13 +87,13 @@ def compute_offsets(input_path: str, output_path: str):
         writer.writeheader()
         writer.writerows(rows)
 
-    print(f"Processed {processed} annotated mentions ({skipped_blank} blank rows skipped, as expected).")
+    print(f"Processed {processed} mentions, {skipped_blank} blank rows skipped.")
     if warnings:
-        print(f"\n{len(warnings)} warning(s) -- review these manually:")
+        print(f"\n{len(warnings)} warning(s):")
         for w in warnings:
             print(w)
     else:
-        print("\nNo warnings -- every span matched cleanly.")
+        print("\nNo warnings.")
     print(f"\nWrote {output_path}")
 
 
