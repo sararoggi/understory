@@ -49,4 +49,4 @@ prerequisites have already been run once.
 | **LANDSCAPE** | Topographic and geological features, including named places |
 | **NATURE** | Personified nature-as-force — abstract address, embodied spirit-characters, or pantheistic animating forces |
 
-Full annotation methodology is documented in [`docs/annotation_guideline.md`](docs/annotation_guideline.md).
+Full annotation methodology is documented in [`docs/annotation_guidelines.md`](docs/annotation_guidelines.md).
