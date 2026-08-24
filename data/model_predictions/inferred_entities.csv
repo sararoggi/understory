@@ -1,0 +1,633 @@
+sentence_id,sentence_text,target_span,start_char,end_char,entity_type
+s00001,"Clear, placid Leman!",,,,
+s00007,"which are the poetry of heaven, If in your bright leaves we would read the fate Of men and empires,--'tis to be forgiven, That in our aspirations to be great, Our destinies o'erleap their mortal state, And claim a kindred with you; for ye are A beauty and a mystery, and create In us such love and reverence from afar, That fortune, fame, power, life, have named themselves a star.",heaven,24,30,WEATHER
+s00007,"which are the poetry of heaven, If in your bright leaves we would read the fate Of men and empires,--'tis to be forgiven, That in our aspirations to be great, Our destinies o'erleap their mortal state, And claim a kindred with you; for ye are A beauty and a mystery, and create In us such love and reverence from afar, That fortune, fame, power, life, have named themselves a star.",leaves,50,56,FLORA
+s00009,"Then stirs the feeling infinite, so felt In solitude, where we are LEAST alone; A truth, which through our being then doth melt, And purifies from self: it is a tone, The soul and source of music, which makes known Eternal harmony, and sheds a charm, Like to the fabled Cytherea's zone, Binding all things with beauty;--'twould disarm The spectre Death, had he substantial power to harm.",soul,171,175,NATURE
+s00010,"Nor vainly did the early Persian make His altar the high places and the peak Of earth-o'ergazing mountains, and thus take A fit and unwalled temple, there to seek The Spirit, in whose honour shrines are weak, Upreared of human hands.",peak,72,76,LANDSCAPE
+s00010,"Nor vainly did the early Persian make His altar the high places and the peak Of earth-o'ergazing mountains, and thus take A fit and unwalled temple, there to seek The Spirit, in whose honour shrines are weak, Upreared of human hands.",earth-,80,86,LANDSCAPE
+s00010,"Nor vainly did the early Persian make His altar the high places and the peak Of earth-o'ergazing mountains, and thus take A fit and unwalled temple, there to seek The Spirit, in whose honour shrines are weak, Upreared of human hands.",mountains,97,106,LANDSCAPE
+s00010,"Nor vainly did the early Persian make His altar the high places and the peak Of earth-o'ergazing mountains, and thus take A fit and unwalled temple, there to seek The Spirit, in whose honour shrines are weak, Upreared of human hands.",Spirit,167,173,NATURE
+s00012,The sky is changed!--and such a change!,sky,4,7,WEATHER
+s00013,"O night, And storm, and darkness, ye are wondrous strong, Yet lovely in your strength, as is the light Of a dark eye in woman!",night,2,7,WEATHER
+s00013,"O night, And storm, and darkness, ye are wondrous strong, Yet lovely in your strength, as is the light Of a dark eye in woman!",storm,13,18,WEATHER
+s00013,"O night, And storm, and darkness, ye are wondrous strong, Yet lovely in your strength, as is the light Of a dark eye in woman!",darkness,24,32,WEATHER
+s00016,And this is in the night:--Most glorious night!,night,19,24,WEATHER
+s00016,And this is in the night:--Most glorious night!,night,41,46,WEATHER
+s00017,Thou wert not sent for slumber!,,,,
+s00018,let me be A sharer in thy fierce and far delight-- A portion of the tempest and of thee!,,,,
+s00021,"Now, where the swift Rhone cleaves his way between Heights which appear as lovers who have parted In hate, whose mining depths so intervene, That they can meet no more, though broken-hearted; Though in their souls, which thus each other thwarted, Love was the very root of the fond rage Which blighted their life's bloom, and then departed: Itself expired, but leaving them an age Of years all winters--war within themselves to wage.",Heights,51,58,LANDSCAPE
+s00021,"Now, where the swift Rhone cleaves his way between Heights which appear as lovers who have parted In hate, whose mining depths so intervene, That they can meet no more, though broken-hearted; Though in their souls, which thus each other thwarted, Love was the very root of the fond rage Which blighted their life's bloom, and then departed: Itself expired, but leaving them an age Of years all winters--war within themselves to wage.",winters,394,401,WEATHER
+s00026,"Or do ye find at length, like eagles, some high nest?",eagles,30,36,FAUNA
+s00026,"Or do ye find at length, like eagles, some high nest?",nest,48,52,FAUNA
+s00027,"Could I embody and unbosom now That which is most within me,--could I wreak My thoughts upon expression, and thus throw Soul, heart, mind, passions, feelings, strong or weak, All that I would have sought, and all I seek, Bear, know, feel, and yet breathe--into one word, And that one word were lightning, I would speak; But as it is, I live and die unheard, With a most voiceless thought, sheathing it as a sword.",Soul,120,124,NATURE
+s00027,"Could I embody and unbosom now That which is most within me,--could I wreak My thoughts upon expression, and thus throw Soul, heart, mind, passions, feelings, strong or weak, All that I would have sought, and all I seek, Bear, know, feel, and yet breathe--into one word, And that one word were lightning, I would speak; But as it is, I live and die unheard, With a most voiceless thought, sheathing it as a sword.",lightning,294,303,WEATHER
+s00029,Clarens! sweet Clarens! birthplace of deep Love!,,,,
+s00034,"He who hath loved not, here would learn that lore, And make his heart a spirit: he who knows That tender mystery, will love the more,",spirit,72,78,NATURE
+s00036,"Twas not for fiction chose Rousseau this spot, Peopling it with affections; but he found It was the scene which passion must allot To the mind's purified beings; 'twas the ground Where early Love his Psyche's zone unbound, And hallowed it with loveliness: 'tis lone, And wonderful, and deep, and hath a sound, And sense, and sight of sweetness; here the Rhone Hath spread himself a couch, the Alps have reared a throne.",Alps,393,397,LANDSCAPE
+s00037,Lausanne! and Ferney!,,,,
+s00038,"ye have been the abodes Of names which unto you bequeathed a name; Mortals, who sought and found, by dangerous roads, A path to perpetuity of fame: They were gigantic minds, and their steep aim Was, Titan-like, on daring doubts to pile Thoughts which should call down thunder, and the flame Of Heaven, again assailed, if Heaven the while On man and man's research could deign do more than smile.",thunder,268,275,WEATHER
+s00038,"ye have been the abodes Of names which unto you bequeathed a name; Mortals, who sought and found, by dangerous roads, A path to perpetuity of fame: They were gigantic minds, and their steep aim Was, Titan-like, on daring doubts to pile Thoughts which should call down thunder, and the flame Of Heaven, again assailed, if Heaven the while On man and man's research could deign do more than smile.",flame,285,290,WEATHER
+s00038,"ye have been the abodes Of names which unto you bequeathed a name; Mortals, who sought and found, by dangerous roads, A path to perpetuity of fame: They were gigantic minds, and their steep aim Was, Titan-like, on daring doubts to pile Thoughts which should call down thunder, and the flame Of Heaven, again assailed, if Heaven the while On man and man's research could deign do more than smile.",Heaven,294,300,WEATHER
+s00038,"ye have been the abodes Of names which unto you bequeathed a name; Mortals, who sought and found, by dangerous roads, A path to perpetuity of fame: They were gigantic minds, and their steep aim Was, Titan-like, on daring doubts to pile Thoughts which should call down thunder, and the flame Of Heaven, again assailed, if Heaven the while On man and man's research could deign do more than smile.",Heaven,321,327,WEATHER
+s00040,"The other, deep and slow, exhausting thought, And hiving wisdom with each studious year, In meditation dwelt, with learning wrought, And shaped his weapon with an edge severe, Sapping a solemn creed with solemn sneer; The lord of irony,--that master spell, Which stung his foes to wrath, which grew from fear, And doomed him to the zealot's ready hell, Which answers to all doubts so eloquently well.",,,,
+s00041,"Yet, peace be with their ashes,--for by them, If merited, the penalty is paid; It is not ours to judge, far less condemn; The hour must come when such things shall be made Known unto all,--or hope and dread allayed By slumber on one pillow, in the dust, Which, thus much we are sure, must lie decayed; And when it shall revive, as is our trust, 'Twill be to be forgiven, or suffer what is just.",dust,248,252,WEATHER
+s00042,"But let me quit man's works, again to read His Maker's spread around me, and suspend This page, which from my reveries I feed, Until it seems prolonging without end.",,,,
+s00045,"Thus far have I proceeded in a theme Renewed with no kind auspices:--to feel We are not what we have been, and to deem We are not what we should be, and to steel The heart against itself; and to conceal, With a proud caution, love or hate, or aught,-- Passion or feeling, purpose, grief, or zeal,-- Which is the tyrant spirit of our thought, Is a stern task of soul:--No matter,--it is taught.",spirit,319,325,NATURE
+s00046,"And for these words, thus woven into song, It may be that they are a harmless wile,--",,,,
+s00047,"The colouring of the scenes which fleet along, Which I would seize, in passing, to beguile My breast, or that of others, for a while.",,,,
+s00048,Fame is the thirst of,,,,
+s00049,"youth,--but I am not So young as to regard men's frown or smile As loss or guerdon of a glorious lot; I stood and stand alone,--remembered or forgot.",,,,
+s00050,"I have not loved the world, nor the world me; I have not flattered its rank breath, nor bowed To its idolatries a patient knee,-- Nor coined my cheek to smiles, nor cried aloud In worship of an echo; in the crowd They could not deem me one of such; I stood Among them, but not of them; in a shroud Of thoughts which were not their thoughts, and still could, Had I not filed my mind, which thus itself subdued.",,,,
+s00051,"I have not loved the world, nor the world me,-- But let us part fair foes; I do believe, Though I have found them not, that there may be Words which are things,--hopes which will not deceive, And virtues which are merciful, nor weave Snares for the falling: I would also deem O'er others' griefs that some sincerely grieve; That two, or one, are almost what they seem,-- That goodness is no name, and happiness no dream.",,,,
+s00052,with thy name this song begun-- My daughter!,,,,
+s00053,with thy name this much shall end--,,,,
+s00054,"I see thee not, I hear thee not,--but none Can be so wrapt in thee; thou art the friend To whom the shadows of far years extend: Albeit my brow thou never shouldst behold, My voice shall with thy future visions blend, And reach into thy heart, when mine is cold,-- A token and a tone, even from thy father's mould.",,,,
+s00056,"Thy dawn of little joys,--to sit and see Almost thy very growth,--to view thee catch Knowledge of objects, wonders yet to thee!",,,,
+s00058,"This, it should seem, was not reserved for me",,,,
+s00059,"Yet this was in my nature:--As it is, I know not what is there, yet something like to this.",,,,
+s00061,"Still thou wouldst love me, still that more than life retain.",,,,
+s00063,"Of thy sire These were the elements, and thine no less.",,,,
+s00064,"As yet such are around thee; but thy fire Shall be more tempered, and thy hope far higher.",,,,
+s00065,Sweet be thy cradled slumbers!,,,,
+s00067,"The spirits I have raised abandon me, The spells which I have studied baffle me, The remedy I recked of tortured me",spirits,4,11,NATURE
+s00068,"I lean no more on superhuman aid; It hath no power upon the past, and for The future, till the past be gulfed in darkness, It is not of my search.--My",,,,
+s00069,"Mother Earth!And thou fresh-breaking Day, and you, ye Mountains, Why are ye beautiful?",Day,37,40,WEATHER
+s00069,"Mother Earth!And thou fresh-breaking Day, and you, ye Mountains, Why are ye beautiful?",Mountains,54,63,LANDSCAPE
+s00070,I cannot love ye.,,,,
+s00071,"And thou, the bright Eye of the Universe, 10 That openest over all, and unto all Art a delight--thou shin'st not on my heart.",Universe,32,40,WEATHER
+s00073,I feel the impulse--yet I do not plunge; 20 I see the peril--yet do not recede; And,,,,
+s00074,"my brain reels--and yet my foot is firm: There is a power upon me which withholds, And makes it my fatality to live,-- If it be life to wear within myself This barrenness of Spirit, and to be My own Soul's sepulchre, for I have ceased To justify my deeds unto myself-- The last infirmity of evil.",Spirit,174,180,NATURE
+s00074,"my brain reels--and yet my foot is firm: There is a power upon me which withholds, And makes it my fatality to live,-- If it be life to wear within myself This barrenness of Spirit, and to be My own Soul's sepulchre, for I have ceased To justify my deeds unto myself-- The last infirmity of evil.",Soul,199,203,NATURE
+s00075,"Aye, Thou winged and cloud-cleaving minister, 30",cloud,21,26,WEATHER
+s00077,How beautiful is all this visible world!How glorious in its action and itself!,,,,
+s00078,"But we, who name ourselves its sovereigns, we, Half dust, half deity, alike unfit 40 To sink or soar, with our mixed essence make A conflict of its elements, and breathe The breath of degradation and of pride, Contending with low wants and lofty will, Till our Mortality predominates, And men are--what they name not to themselves, And trust not to each other.",dust,52,56,WEATHER
+s00082,Even so This way the Chamois leapt: her nimble feet Have baffled me; my gains to-day will scarce Repay my break-neck travail.--What is here?,,,,
+s00084,(_not perceiving the other_).,,,,
+s00086,"Now furrowed o'er With wrinkles, ploughed by moments, not by years And hours, all tortured into ages--hours",,,,
+s00088,"Ye Avalanches, whom a breath draws down In mountainous o'erwhelming, come and crush me!",,,,
+s00089,"I hear ye momently above, beneath, Crash with a frequent conflict;but ye pass, And only fall on things that still would live; On the young flourishing forest, or the hut 80 And hamlet of the harmless villager.",forest,151,157,FLORA
+s00092,"I must approach him cautiously; if near, 90 A sudden step will startle him, and he Seems tottering already.",,,,
+s00094,"have a care, 100 Your next step may be fatal!--for the love Of Him who made you, stand not on that brink!",,,,
+s00095,(_not hearing him_).,,,,
+s00097,Look not upon me thus reproachfully-- You were not meant for me--Earth!,,,,
+s00098,take these atoms!,,,,
+s00100,"I am most sick at heart--nay, grasp me not--",,,,
+s00102,I'll answer that anon.--Away with me----,,,,
+s00104,"The Chalet will be gained within an hour: Come on, we'll quickly find a surer footing, And something like a pathway, which the torrent Hath washed since winter.--Come,'tis bravely done--",pathway,108,115,LANDSCAPE
+s00104,"The Chalet will be gained within an hour: Come on, we'll quickly find a surer footing, And something like a pathway, which the torrent Hath washed since winter.--Come,'tis bravely done--",torrent,127,134,LANDSCAPE
+s00104,"The Chalet will be gained within an hour: Come on, we'll quickly find a surer footing, And something like a pathway, which the torrent Hath washed since winter.--Come,'tis bravely done--",winter,153,159,WEATHER
+s00105,You should have been a hunter.--Follow me.,,,,
+s00107,"No eyes But mine now drink this sight of loveliness; I should be sole in this sweet solitude, 10 And with the Spirit of the place divide The homage of these waters.--I will call her.",Spirit,110,116,NATURE
+s00107,"No eyes But mine now drink this sight of loveliness; I should be sole in this sweet solitude, 10 And with the Spirit of the place divide The homage of these waters.--I will call her.",waters,157,163,LANDSCAPE
+s00108,"Which of itself shows immortality, I read that thou wilt pardon to a Son Of Earth, whom the abstruser powers permit At times to commune with them--if that he 30 Avail him of his spells--to call thee thus, And gaze on thee a moment.",,,,
+s00109,Son of Earth!,,,,
+s00110,"I know thee, and the Powers which give thee power!",,,,
+s00111,"I know thee for a man of many thoughts, And deeds of good and ill, extreme in both, Fatal and fated in thy sufferings.",,,,
+s00112,I have expected this--what would'st thou with me?,,,,
+s00113,To look upon thy beauty--nothing further.,,,,
+s00114,"The face of the earth hath maddened me, and I Take refuge in her mysteries, and pierce 40 To the abodes of those who govern her--",earth,16,21,LANDSCAPE
+s00115,But they can nothing aid me.,,,,
+s00116,"I have sought From them what they could not bestow, and now I search no further.",,,,
+s00117,"What could be the quest Which is not in the power of the most powerful, The rulers of the invisible?",,,,
+s00118,A boon;-- But why should I repeat it?,,,,
+s00119,'twere in vain.,,,,
+s00120,I know not that; let thy lips utter it.,,,,
+s00121,"Well, though it torture me, 'tis but the same; My pang shall find a voice.",,,,
+s00122,"From my youth upwards 50 My Spirit walked not with the souls of men, Nor looked upon the earth with human eyes; The thirst of their ambition was not mine, The aim of their existence was not mine; My joys--my griefs--my passions--and my powers, Made me a stranger; though I wore the form, I had no sympathy with breathing flesh, Nor midst the Creatures of Clay that girded me Was there but One who--but of her anon.",Spirit,28,34,NATURE
+s00122,"From my youth upwards 50 My Spirit walked not with the souls of men, Nor looked upon the earth with human eyes; The thirst of their ambition was not mine, The aim of their existence was not mine; My joys--my griefs--my passions--and my powers, Made me a stranger; though I wore the form, I had no sympathy with breathing flesh, Nor midst the Creatures of Clay that girded me Was there but One who--but of her anon.",earth,89,94,LANDSCAPE
+s00125,"These were my pastimes, and to be alone; For if the beings, of whom I was one,-- Hating to be so,--crossed me in my path, I felt myself degraded back to them, And was all clay again.",,,,
+s00126,"And then I dived, In my lone wanderings, to the caves of Death, 80 Searching its cause in its effect; and drew From withered bones, and skulls, and heaped up dust Conclusions most forbidden.",,,,
+s00128,"I but thus prolonged my words, Boasting these idle attributes, because As I approach the core of my heart's grief--",,,,
+s00129,But--to my task.,,,,
+s00130,"I have not named to thee 100 Father or mother, mistress, friend, or being, With whom I wore the chain of human ties; If I had such, they seemed not such to me--",,,,
+s00131,Yet there was One---- _,,,,
+s00132,Spare not thyself--proceed.,,,,
+s00133,"She was like me in lineaments--her eyes-- Her hair--her features--all, to the very tone Even of her voice, they said were like to mine; But softened all, and tempered into beauty:",,,,
+s00134,"She had the same lone thoughts and wanderings, The quest of hidden knowledge, and a mind 110 To comprehend the Universe: nor these Alone, but with them gentler powers than mine, Pity, and smiles, and tears--which I had not; And tenderness--but that I had for her; Humility--and that I never had.",Universe,111,119,NATURE
+s00135,"Her faults were mine--her virtues were her own-- I loved her, and destroyed her!",,,,
+s00136,With thy hand? _Man_.,,,,
+s00137,"Not with my hand, but heart, which broke her heart; It gazed on mine, and withered.",,,,
+s00138,"I have shed Blood, but not hers--and yet her blood was shed; 120 I saw--and could not stanch it.",,,,
+s00139,And for this-- A being of the race thou dost despise--,,,,
+s00140,"The order, which thine own would rise above, Mingling with us and ours,--thou dost forego",,,,
+s00141,"The gifts of our great knowledge, and shrink'st back To recreant mortality----Away!",,,,
+s00143,"I tell thee, since that hour--",,,,
+s00144,"But words are breath--look on me in my sleep, Or watch my watchings--Come and sit by me!",,,,
+s00145,"My solitude is solitude no more, 130 But peopled with the Furies;--I have gnashed My teeth in darkness till returning morn, Then cursed myself till sunset;--I have prayed For madness as a blessing--'tis denied me.",sunset,148,154,WEATHER
+s00146,"I have affronted Death--but in the war Of elements the waters shrunk from me,And fatal things passed harmless; the cold hand Of an all-pitiless Demon held me back, Back by a single hair, which would not break.",elements,42,50,LANDSCAPE
+s00146,"I have affronted Death--but in the war Of elements the waters shrunk from me,And fatal things passed harmless; the cold hand Of an all-pitiless Demon held me back, Back by a single hair, which would not break.",waters,55,61,LANDSCAPE
+s00149,It may be 150 That I can aid thee.,,,,
+s00150,"To do this thy power Must wake the dead, or lay me low with them.",,,,
+s00151,Do so--in any shape--in any hour-- With any torture--so it be the last.,,,,
+s00152,"That is not in my province; but if thou Wilt swear obedience to my will, and do My bidding, it may help thee to thy wishes.",,,,
+s00155,Is this all?,,,,
+s00156,"Hast thou no gentler answer?--Yet bethink thee, And pause ere thou rejectest.",,,,
+s00157,I have said it.,,,,
+s00159,"We are the fools of Time and Terror: Days Steal on us, and steal from us; yet we live, Loathing our life, and dreading still to die.",,,,
+s00160,In all the days of this detested yoke--,,,,
+s00161,"This vital weight upon the struggling heart, Which sinks with sorrow, or beats quick with pain, Or joy that ends in agony or faintness-- 170",,,,
+s00162,"In all the days of past and future--for In life there is no present--we can number How few--how less than few--wherein the soul Forbears to pant for death, and yet draws back As from a stream in winter, though the chillBe but a moment's.",stream,185,191,LANDSCAPE
+s00162,"In all the days of past and future--for In life there is no present--we can number How few--how less than few--wherein the soul Forbears to pant for death, and yet draws back As from a stream in winter, though the chillBe but a moment's.",winter,195,201,WEATHER
+s00162,"In all the days of past and future--for In life there is no present--we can number How few--how less than few--wherein the soul Forbears to pant for death, and yet draws back As from a stream in winter, though the chillBe but a moment's.",chillBe,214,221,WEATHER
+s00164,"In words of dubious import, but fulfilled.",,,,
+s00166,What is she?,,,,
+s00167,What is she now?--a sufferer for my sins-- A thing I dare not think upon--or nothing.,,,,
+s00168,Within few hours I shall not call in vain--,,,,
+s00170,"But I can act even what I most abhor, And champion human fears.--The night approaches.",night,69,74,WEATHER
+s00171,I spent the following day roaming through the valley.,valley,46,52,LANDSCAPE
+s00174,These sublime and magnificent scenes afforded me the greatest consolation that I was capable of receiving.,,,,
+s00175,"They elevated me from all littleness of feeling, and although they did not remove my grief, they subdued and tranquillised it.",,,,
+s00176,"In some degree, also, they diverted my mind from the thoughts over which it had brooded for the last month.",,,,
+s00177,"I retired to rest at night; my slumbers, as it were, waited on and ministered to by the assemblance of grand shapes which I had contemplated during the day.",,,,
+s00179,Where had they fled when the next morning I awoke?,,,,
+s00182,Still I would penetrate their misty veil and seek them in their cloudy retreats.,,,,
+s00184,"My mule was brought to the door, and I resolved to ascend to the summit of Montanvert.",,,,
+s00186,It had then filled me with a sublime ecstasy that gave wings to the soul and allowed it to soar from the obscure world to light and joy.,,,,
+s00187,The sight of the awful and majestic in nature had indeed always the effect of solemnising my mind and causing me to forget the passing cares of life.,,,,
+s00188,"I determined to go without a guide, for I was well acquainted with the path, and the presence of another would destroy the solitary grandeur of the scene.",,,,
+s00190,It is a scene terrifically desolate.,,,,
+s00197,We rest; a dream has power to poison sleep.,,,,
+s00198,We rise; one wand’ring thought pollutes the day.,,,,
+s00199,"We feel, conceive, or reason; laugh or weep, Embrace fond woe, or cast our cares away; It is the same: for, be it joy or sorrow, The path of its departure still is free.",,,,
+s00200,Man’s yesterday may ne’er be like his morrow; Nought may endure but mutability!,,,,
+s00206,"The field of ice is almost a league in width, but I spent nearly two hours in crossing it.",of ice,10,16,LANDSCAPE
+s00208,"From the side where I now stood Montanvert was exactly opposite, at the distance of a league; and above it rose Mont Blanc, in awful majesty.",,,,
+s00209,"I remained in a recess of the rock, gazing on this wonderful and stupendous scene.",rock,30,34,LANDSCAPE
+s00211,Their icy and glittering peaks shone in the sunlight over the clouds.,peaks,25,30,LANDSCAPE
+s00211,Their icy and glittering peaks shone in the sunlight over the clouds.,sunlight,44,52,WEATHER
+s00211,Their icy and glittering peaks shone in the sunlight over the clouds.,clouds,62,68,WEATHER
+s00212,"My heart, which was before sorrowful, now swelled with something like joy; I exclaimed, “Wandering spirits, if indeed ye wander, and do not rest in your narrow beds, allow me this faint happiness, or take me, as your companion, away from the joys of life.”",,,,
+s00213,"As I said this I suddenly beheld the figure of a man, at some distance, advancing towards me with superhuman speed.",,,,
+s00214,"He bounded over the crevices in the ice, among which I had walked with caution; his stature, also, as he approached, seemed to exceed that of man.",crevices,20,28,LANDSCAPE
+s00216,"I perceived, as the shape came nearer (sight tremendous and abhorred!)",,,,
+s00217,that it was the wretch whom I had created.,,,,
+s00218,"I trembled with rage and horror, resolving to wait his approach and then close with him in mortal combat.",,,,
+s00219,"He approached; his countenance bespoke bitter anguish, combined with disdain and malignity, while its unearthly ugliness rendered it almost too horrible for human eyes.",,,,
+s00220,"But I scarcely observed this; rage and hatred had at first deprived me of utterance, and I recovered only to overwhelm him with words expressive of furious detestation and contempt.",,,,
+s00221,"“Devil,” I exclaimed, “do you dare approach me?",,,,
+s00222,And do not you fear the fierce vengeance of my arm wreaked on your miserable head?,,,,
+s00224,"Or rather, stay, that I may trample you to dust!",,,,
+s00225,"That I could, with the extinction of your miserable existence, restore those victims whom you have so diabolically murdered!”",,,,
+s00226,"“I expected this reception,” said the dæmon.",,,,
+s00227,"“All men hate the wretched; how, then, must I be hated, who am miserable beyond all living things!",,,,
+s00228,"Yet you, my creator, detest and spurn me, thy creature, to whom thou art bound by ties only dissoluble by the annihilation of one of us.",,,,
+s00229,You purpose to kill me.,,,,
+s00230,How dare you sport thus with life?,,,,
+s00231,"Do your duty towards me, and I will do mine towards you and the rest of mankind.",,,,
+s00233,Fiend that thou art!,,,,
+s00234,The tortures of hell are too mild a vengeance for thy crimes.,,,,
+s00235,"You reproach me with your creation, come on, then, that I may extinguish the spark which I so negligently bestowed.”",,,,
+s00236,"My rage was without bounds; I sprang on him, impelled by all the feelings which can arm one being against the existence of another.",,,,
+s00237,"He easily eluded me and said, “Be calm!",,,,
+s00238,I entreat you to hear me before you give vent to your hatred on my devoted head.,,,,
+s00239,"Have I not suffered enough, that you seek to increase my misery?",,,,
+s00240,"Life, although it may only be an accumulation of anguish, is dear to me, and I will defend it.",,,,
+s00241,"Remember, thou hast made me more powerful than thyself; my height is superior to thine, my joints more supple.",,,,
+s00242,But I will not be tempted to set myself in opposition to thee.,,,,
+s00244,"Oh, Frankenstein, be not equitable to every other and trample upon me alone, to whom thy justice, and even thy clemency and affection, is most due.",,,,
+s00245,"Remember that I am thy creature; I ought to be thy Adam, but I am rather the fallen angel, whom thou drivest from joy for no misdeed.",,,,
+s00246,"Everywhere I see bliss, from which I alone am irrevocably excluded.",,,,
+s00247,I was benevolent and good; misery made me a fiend.,,,,
+s00248,"Make me happy, and I shall again be virtuous.”",,,,
+s00249,I will not hear you.,,,,
+s00250,There can be no community between you and me; we are enemies.,,,,
+s00251,"Begone, or let us try our strength in a fight, in which one must fall.”",,,,
+s00254,"Believe me, Frankenstein, I was benevolent; my soul glowed with love and humanity; but am I not alone, miserably alone?",,,,
+s00256,They spurn and hate me.,,,,
+s00259,"These bleak skies I hail, for they are kinder to me than your fellow beings.",skies,12,17,WEATHER
+s00260,"If the multitude of mankind knew of my existence, they would do as you do, and arm themselves for my destruction.",,,,
+s00262,I will keep no terms with my enemies.,,,,
+s00263,"I am miserable, and they shall share my wretchedness.",,,,
+s00264,"Yet it is in your power to recompense me, and deliver them from an evil which it only remains for you to make so great, that not only you and your family, but thousands of others, shall be swallowed up in the whirlwinds of its rage.",,,,
+s00265,"Let your compassion be moved, and do not disdain me.",,,,
+s00266,"Listen to my tale; when you have heard that, abandon or commiserate me, as you shall judge that I deserve.",,,,
+s00267,But hear me.,,,,
+s00268,"The guilty are allowed, by human laws, bloody as they are, to speak in their own defence before they are condemned.",,,,
+s00269,"Listen to me, Frankenstein.",,,,
+s00271,"Oh, praise the eternal justice of man!",,,,
+s00272,"Yet I ask you not to spare me; listen to me, and then, if you can, and if you will, destroy the work of your hands.”",,,,
+s00273,"“Why do you call to my remembrance,” I rejoined, “circumstances of which I shudder to reflect, that I have been the miserable origin and author?",,,,
+s00274,"Cursed be the day, abhorred devil, in which you first saw light!",day,14,17,WEATHER
+s00275,Cursed (although I curse myself) be the hands that formed you!,,,,
+s00276,You have made me wretched beyond expression.,,,,
+s00277,You have left me no power to consider whether I am just to you or not.,,,,
+s00278,Relieve me from the sight of your detested form.”,,,,
+s00279,"“Thus I relieve thee, my creator,” he said, and placed his hated hands before my eyes, which I flung from me with violence; “thus I take from thee a sight which you abhor.",,,,
+s00280,Still thou canst listen to me and grant me thy compassion.,,,,
+s00281,"By the virtues that I once possessed, I demand this from you.",,,,
+s00282,"Hear my tale; it is long and strange, and the temperature of this place is not fitting to your fine sensations; come to the hut upon the mountain.",mountain,137,145,LANDSCAPE
+s00285,As he said this he led the way across the ice; I followed.,,,,
+s00286,"My heart was full, and I did not answer him, but as I proceeded, I weighed the various arguments that he had used and determined at least to listen to his tale.",,,,
+s00287,"I was partly urged by curiosity, and compassion confirmed my resolution.",,,,
+s00288,"I had hitherto supposed him to be the murderer of my brother, and I eagerly sought a confirmation or denial of this opinion.",,,,
+s00290,These motives urged me to comply with his demand.,,,,
+s00291,"We crossed the ice, therefore, and ascended the opposite rock.",rock,57,61,LANDSCAPE
+s00293,"But I consented to listen, and seating myself by the fire which my odious companion had lighted, he thus began his tale.",,,,
+s00294,You will rejoice to hear that no disaster has accompanied the commencement of an enterprise which you have regarded with such evil forebodings.,,,,
+s00295,"I arrived here yesterday, and my first task is to assure my dear sister of my welfare and increasing confidence in the success of my undertaking.",,,,
+s00297,Do you understand this feeling?,,,,
+s00299,"Inspirited by this wind of promise, my daydreams become more fervent and vivid.",wind,19,23,WEATHER
+s00303,"Its productions and features may be without example, as the phenomena of the heavenly bodies undoubtedly are in those undiscovered solitudes.",,,,
+s00304,What may not be expected in a country of eternal light?,,,,
+s00305,I may there discover the wondrous power which attracts the needle and may regulate a thousand celestial observations that require only this voyage to render their seeming eccentricities consistent for ever.,,,,
+s00306,"I shall satiate my ardent curiosity with the sight of a part of the world never before visited, and may tread a land never before imprinted by the foot of man.",,,,
+s00308,"But supposing all these conjectures to be false, you cannot contest the inestimable benefit which I shall confer on all mankind, to the last generation, by discovering a passage near the pole to those countries, to reach which at present so many months are requisite; or by ascertaining the secret of the magnet, which, if at all possible, can only be effected by an undertaking such as mine.",,,,
+s00309,"These reflections have dispelled the agitation with which I began my letter, and I feel my heart glow with an enthusiasm which elevates me to heaven, for nothing contributes so much to tranquillise the mind as a steady purpose—a point on which the soul may fix its intellectual eye.",,,,
+s00310,This expedition has been the favourite dream of my early years.,,,,
+s00312,You may remember that a history of all the voyages made for purposes of discovery composed the whole of our good Uncle Thomas’ library.,,,,
+s00313,"My education was neglected, yet I was passionately fond of reading.",,,,
+s00314,"These volumes were my study day and night, and my familiarity with them increased that regret which I had felt, as a child, on learning that my father’s dying injunction had forbidden my uncle to allow me to embark in a seafaring life.",,,,
+s00315,"These visions faded when I perused, for the first time, those poets whose effusions entranced my soul and lifted it to heaven.",,,,
+s00317,You are well acquainted with my failure and how heavily I bore the disappointment.,,,,
+s00319,Six years have passed since I resolved on my present undertaking.,,,,
+s00321,I commenced by inuring my body to hardship.,,,,
+s00324,"I must own I felt a little proud when my captain offered me the second dignity in the vessel and entreated me to remain with the greatest earnestness, so valuable did he consider my services.",,,,
+s00325,"And now, dear Margaret, do I not deserve to accomplish some great purpose?",,,,
+s00326,"My life might have been passed in ease and luxury, but I preferred glory to every enticement that wealth placed in my path.",,,,
+s00327,"Oh, that some encouraging voice would answer in the affirmative!",,,,
+s00328,"My courage and my resolution is firm; but my hopes fluctuate, and my spirits are often depressed.",,,,
+s00329,"I am about to proceed on a long and difficult voyage, the emergencies of which will demand all my fortitude: I am required not only to raise the spirits of others, but sometimes to sustain my own, when theirs are failing.",,,,
+s00330,This is the most favourable period for travelling in Russia.,,,,
+s00333,I have no ambition to lose my life on the post-road between St. Petersburgh and Archangel.,,,,
+s00335,I do not intend to sail until the month of June; and when shall I return?,,,,
+s00336,"Ah, dear sister, how can I answer this question?",,,,
+s00337,"If I succeed, many, many months, perhaps years, will pass before you and I may meet.",,,,
+s00338,"If I fail, you will see me again soon, or never.",,,,
+s00339,"Farewell, my dear, excellent Margaret.",,,,
+s00340,"Heaven shower down blessings on you, and save me, that I may again and again testify my gratitude for all your love and kindness.",,,,
+s00342,Yet a second step is taken towards my enterprise.,,,,
+s00343,I have hired a vessel and am occupied in collecting my sailors; those whom I have already engaged appear to be men on whom I can depend and are certainly possessed of dauntless courage.,,,,
+s00345,"I shall commit my thoughts to paper, it is true; but that is a poor medium for the communication of feeling.",,,,
+s00346,"I desire the company of a man who could sympathise with me, whose eyes would reply to mine.",,,,
+s00348,"I have no one near me, gentle yet courageous, possessed of a cultivated as well as of a capacious mind, whose tastes are like my own, to approve or amend my plans.",,,,
+s00350,I am too ardent in execution and too impatient of difficulties.,,,,
+s00351,But it is a still greater evil to me that I am self-educated: for the first fourteen years of my life I ran wild on a common and read nothing but our Uncle Thomas’ books of voyages.,,,,
+s00353,Now I am twenty-eight and am in reality more illiterate than many schoolboys of fifteen.,,,,
+s00355,"and I greatly need a friend who would have sense enough not to despise me as romantic, and affection enough for me to endeavour to regulate my mind.",,,,
+s00357,"Yet some feelings, unallied to the dross of human nature, beat even in these rugged bosoms.",,,,
+s00358,"My lieutenant, for instance, is a man of wonderful courage and enterprise; he is madly desirous of glory, or rather, to word my phrase more characteristically, of advancement in his profession.",,,,
+s00360,"I first became acquainted with him on board a whale vessel; finding that he was unemployed in this city, I easily engaged him to assist in my enterprise.",,,,
+s00362,"This circumstance, added to his well-known integrity and dauntless courage, made me very desirous to engage him.",,,,
+s00363,"A youth passed in solitude, my best years spent under your gentle and feminine fosterage, has so refined the groundwork of my character that I cannot overcome an intense distaste to the usual brutality exercised on board ship: I have never believed it to be necessary, and when I heard of a mariner equally noted for his kindliness of heart and the respect and obedience paid to him by his crew, I felt myself peculiarly fortunate in being able to secure his services.",,,,
+s00364,"I heard of him first in rather a romantic manner, from a lady who owes to him the happiness of her life.",,,,
+s00365,"This, briefly, is his story.",,,,
+s00367,"He saw his mistress once before the destined ceremony; but she was bathed in tears, and throwing herself at his feet, entreated him to spare her, confessing at the same time that she loved another, but that he was poor, and that her father would never consent to the union.",,,,
+s00368,"My generous friend reassured the suppliant, and on being informed of the name of her lover, instantly abandoned his pursuit.",,,,
+s00370,"But the old man decidedly refused, thinking himself bound in honour to my friend, who, when he found the father inexorable, quitted his country, nor returned until he heard that his former mistress was married according to her inclinations.",,,,
+s00371,“What a noble fellow!”,,,,
+s00372,you will exclaim.,,,,
+s00373,"He is so; but then he is wholly uneducated: he is as silent as a Turk, and a kind of ignorant carelessness attends him, which, while it renders his conduct the more astonishing, detracts from the interest and sympathy which otherwise he would command.",,,,
+s00374,"Yet do not suppose, because I complain a little or because I can conceive a consolation for my toils which I may never know, that I am wavering in my resolutions.",,,,
+s00375,"Those are as fixed as fate, and my voyage is only now delayed until the weather shall permit my embarkation.",weather,72,79,WEATHER
+s00377,I shall do nothing rashly: you know me sufficiently to confide in my prudence and considerateness whenever the safety of others is committed to my care.,,,,
+s00378,I cannot describe to you my sensations on the near prospect of my undertaking.,,,,
+s00379,"It is impossible to communicate to you a conception of the trembling sensation, half pleasurable and half fearful, with which I am preparing to depart.",,,,
+s00381,"You will smile at my allusion, but I will disclose a secret.",,,,
+s00383,There is something at work in my soul which I do not understand.,,,,
+s00386,"Shall I meet you again, after having traversed immense seas, and returned by the most southern cape of Africa or America?",seas,55,59,LANDSCAPE
+s00386,"Shall I meet you again, after having traversed immense seas, and returned by the most southern cape of Africa or America?",cape,95,99,LANDSCAPE
+s00387,"I dare not expect such success, yet I cannot bear to look on the reverse of the picture.",,,,
+s00388,Continue for the present to write to me by every opportunity: I may receive your letters on some occasions when I need them most to support my spirits.,,,,
+s00389,I love you very tenderly.,,,,
+s00390,"Remember me with affection, should you never hear from me again.",,,,
+s00391,"Your affectionate brother, Robert Walton July 7th, 17—.",,,,
+s00392,"My dear Sister, I write a few lines in haste to say that I am safe—and well advanced on my voyage.",,,,
+s00393,"This letter will reach England by a merchantman now on its homeward voyage from Archangel; more fortunate than I, who may not see my native land, perhaps, for many years.",,,,
+s00394,"I am, however, in good spirits: my men are bold and apparently firm of purpose, nor do the floating sheets of ice that continually pass us, indicating the dangers of the region towards which we are advancing, appear to dismay them.",,,,
+s00396,No incidents have hitherto befallen us that would make a figure in a letter.,,,,
+s00397,"One or two stiff gales and the springing of a leak are accidents which experienced navigators scarcely remember to record, and I shall be well content if nothing worse happen to us during our voyage.",gales,17,22,WEATHER
+s00398,"Adieu, my dear Margaret.",,,,
+s00399,"Be assured that for my own sake, as well as yours, I will not rashly encounter danger.",,,,
+s00400,"I will be cool, persevering, and prudent.",,,,
+s00401,But success _shall_ crown my endeavours.,,,,
+s00403,Why not still proceed over the untamed yet obedient element?,,,,
+s00404,What can stop the determined heart and resolved will of man?,,,,
+s00405,My swelling heart involuntarily pours itself out thus.,,,,
+s00406,But I must finish.,,,,
+s00407,Heaven bless my beloved sister!,,,,
+s00408,"R.W. August 5th, 17—.",,,,
+s00409,"So strange an accident has happened to us that I cannot forbear recording it, although it is very probable that you will see me before these papers can come into your possession.",,,,
+s00412,"Our situation was somewhat dangerous, especially as we were compassed round by a very thick fog.",fog,92,95,WEATHER
+s00414,"About two o’clock the mist cleared away, and we beheld, stretched out in every direction, vast and irregular plains of ice, which seemed to have no end.",mist,22,26,WEATHER
+s00414,"About two o’clock the mist cleared away, and we beheld, stretched out in every direction, vast and irregular plains of ice, which seemed to have no end.",plains,109,115,LANDSCAPE
+s00414,"About two o’clock the mist cleared away, and we beheld, stretched out in every direction, vast and irregular plains of ice, which seemed to have no end.",ice,119,122,LANDSCAPE
+s00415,"Some of my comrades groaned, and my own mind began to grow watchful with anxious thoughts, when a strange sight suddenly attracted our attention and diverted our solicitude from our own situation.",,,,
+s00417,We watched the rapid progress of the traveller with our telescopes until he was lost among the distant inequalities of the ice.,,,,
+s00418,This appearance excited our unqualified wonder.,,,,
+s00419,"We were, as we believed, many hundred miles from any land; but this apparition seemed to denote that it was not, in reality, so distant as we had supposed.",,,,
+s00420,"Shut in, however, by ice, it was impossible to follow his track, which we had observed with the greatest attention.",,,,
+s00422,"We, however, lay to until the morning, fearing to encounter in the dark those large loose masses which float about after the breaking up of the ice.",,,,
+s00423,I profited of this time to rest for a few hours.,,,,
+s00425,"It was, in fact, a sledge, like that we had seen before, which had drifted towards us in the night on a large fragment of ice.",night,93,98,WEATHER
+s00427,"He was not, as the other traveller seemed to be, a savage inhabitant of some undiscovered island, but a European.",,,,
+s00428,"When I appeared on deck the master said, “Here is our captain, and he will not allow you to perish on the open sea.”",,,,
+s00430,"“Before I come on board your vessel,” said he, “will you have the kindness to inform me whither you are bound?”",,,,
+s00431,You may conceive my astonishment on hearing such a question addressed to me from a man on the brink of destruction and to whom I should have supposed that my vessel would have been a resource which he would not have exchanged for the most precious wealth the earth can afford.,,,,
+s00433,Upon hearing this he appeared satisfied and consented to come on board.,,,,
+s00434,"Margaret, if you had seen the man who thus capitulated for his safety, your surprise would have been boundless.",,,,
+s00435,"His limbs were nearly frozen, and his body dreadfully emaciated by fatigue and suffering.",,,,
+s00436,I never saw a man in so wretched a condition.,,,,
+s00437,"We attempted to carry him into the cabin, but as soon as he had quitted the fresh air he fainted.",air,82,85,WEATHER
+s00438,We accordingly brought him back to the deck and restored him to animation by rubbing him with brandy and forcing him to swallow a small quantity.,,,,
+s00439,As soon as he showed signs of life we wrapped him up in blankets and placed him near the chimney of the kitchen stove.,,,,
+s00440,"By slow degrees he recovered and ate a little soup, which restored him wonderfully.",,,,
+s00441,"Two days passed in this manner before he was able to speak, and I often feared that his sufferings had deprived him of understanding.",,,,
+s00442,"When he had in some measure recovered, I removed him to my own cabin and attended on him as much as my duty would permit.",,,,
+s00443,"I never saw a more interesting creature: his eyes have generally an expression of wildness, and even madness, but there are moments",,,,
+s00444,"when, if anyone performs an act of kindness towards him or does him any the most trifling service, his whole countenance is lighted up, as it were, with a beam of benevolence and sweetness that I never saw equalled.",,,,
+s00445,"But he is generally melancholy and despairing, and sometimes he gnashes his teeth, as if impatient of the weight of woes that oppresses him.",,,,
+s00446,"When my guest was a little recovered I had great trouble to keep off the men, who wished to ask him a thousand questions; but I would not allow him to be tormented by their idle curiosity, in a state of body and mind whose restoration evidently depended upon entire repose.",,,,
+s00447,"Once, however, the lieutenant asked why he had come so far upon the ice in so strange a vehicle.",,,,
+s00448,"His countenance instantly assumed an aspect of the deepest gloom, and he replied, “To seek one who fled from me.”",,,,
+s00449,“And did the man whom you pursued travel in the same fashion?”,,,,
+s00451,"This aroused the stranger’s attention, and he asked a multitude of questions concerning the route which the dæmon, as he called him, had pursued.",,,,
+s00452,"Soon after, when he was alone with me, he said, “I have, doubtless, excited your curiosity, as well as that of these good people; but you are too considerate to make inquiries.”",,,,
+s00453,“Certainly; it would indeed be very impertinent and inhuman in me to trouble you with any inquisitiveness of mine.”,,,,
+s00454,“And yet you rescued me from a strange and perilous situation; you have benevolently restored me to life.”,,,,
+s00455,Soon after this he inquired if I thought that the breaking up of the ice had destroyed the other sledge.,,,,
+s00456,"I replied that I could not answer with any degree of certainty, for the ice had not broken until near midnight, and the traveller might have arrived at a place of safety before that time; but of this I could not judge.",ice,72,75,WEATHER
+s00457,From this time a new spirit of life animated the decaying frame of the stranger.,,,,
+s00458,"He manifested the greatest eagerness to be upon deck to watch for the sledge which had before appeared; but I have persuaded him to remain in the cabin, for he is far too weak to sustain the rawness of the atmosphere.",,,,
+s00459,I have promised that someone should watch for him and give him instant notice if any new object should appear in sight.,,,,
+s00460,Such is my journal of what relates to this strange occurrence up to the present day.,,,,
+s00461,The stranger has gradually improved in health but is very silent and appears uneasy when anyone except myself enters his cabin.,,,,
+s00462,"Yet his manners are so conciliating and gentle that the sailors are all interested in him, although they have had very little communication with him.",,,,
+s00463,"For my own part, I begin to love him as a brother, and his constant and deep grief fills me with sympathy and compassion.",,,,
+s00464,"He must have been a noble creature in his better days, being even now in wreck so attractive and amiable.",,,,
+s00466,"I shall continue my journal concerning the stranger at intervals, should I have any fresh incidents to record.",,,,
+s00467,"August 13th, 17—.",,,,
+s00468,My affection for my guest increases every day.,,,,
+s00469,He excites at once my admiration and my pity to an astonishing degree.,,,,
+s00471,"He is so gentle, yet so wise; his mind is so cultivated, and when he speaks, although his words are culled with the choicest art, yet they flow with rapidity and unparalleled eloquence.",,,,
+s00472,"He is now much recovered from his illness and is continually on the deck, apparently watching for the sledge that preceded his own.",,,,
+s00473,"Yet, although unhappy, he is not so utterly occupied by his own misery but that he interests himself deeply in the projects of others.",,,,
+s00474,"He has frequently conversed with me on mine, which I have communicated to him without disguise.",,,,
+s00475,He entered attentively into all my arguments in favour of my eventual success and into every minute detail of the measures I had taken to secure it.,,,,
+s00476,"I was easily led by the sympathy which he evinced to use the language of my heart, to give utterance to the burning ardour of my soul and to say, with all the fervour that warmed me, how gladly I would sacrifice my fortune, my existence, my every hope, to the furtherance of my enterprise.",,,,
+s00477,"One man’s life or death were but a small price to pay for the acquirement of the knowledge which I sought, for the dominion I should acquire and transmit over the elemental foes of our race.",,,,
+s00478,"As I spoke, a dark gloom spread over my listener’s countenance.",,,,
+s00479,"At first I perceived that he tried to suppress his emotion; he placed his hands before his eyes, and my voice quivered and failed me as I beheld tears trickle fast from between his fingers; a groan burst from his heaving breast.",,,,
+s00480,"I paused; at length he spoke, in broken accents: “Unhappy man!",,,,
+s00481,Do you share my madness?,,,,
+s00483,"Hear me; let me reveal my tale, and you will dash the cup from your lips!”",,,,
+s00484,"Such words, you may imagine, strongly excited my curiosity; but the paroxysm of grief that had seized the stranger overcame his weakened powers, and many hours of repose and tranquil conversation were necessary to restore his composure.",,,,
+s00485,"Having conquered the violence of his feelings, he appeared to despise himself for being the slave of passion; and quelling the dark tyranny of despair, he led me again to converse concerning myself personally.",,,,
+s00486,He asked me the history of my earlier years.,,,,
+s00487,"The tale was quickly told, but it awakened various trains of reflection.",,,,
+s00488,"I spoke of my desire of finding a friend, of my thirst for a more intimate sympathy with a fellow mind than had ever fallen to my lot, and expressed my conviction that a man could boast of little happiness who did not enjoy this blessing.",,,,
+s00491,"You have hope, and the world before you, and have no cause for despair.",,,,
+s00492,But I—I have lost everything and cannot begin life anew.”,,,,
+s00493,"As he said this his countenance became expressive of a calm, settled grief that touched me to the heart.",,,,
+s00494,But he was silent and presently retired to his cabin.,,,,
+s00495,"Even broken in spirit as he is, no one can feel more deeply than he does the beauties of nature.",nature,89,95,NATURE
+s00498,Will you smile at the enthusiasm I express concerning this divine wanderer?,,,,
+s00499,You would not if you saw him.,,,,
+s00500,"You have been tutored and refined by books and retirement from the world, and you are therefore somewhat fastidious; but this only renders you the more fit to appreciate the extraordinary merits of this wonderful man.",,,,
+s00501,Sometimes I have endeavoured to discover what quality it is which he possesses that elevates him so immeasurably above any other person I ever knew.,,,,
+s00502,"I believe it to be an intuitive discernment, a quick but never-failing power of judgment, a penetration into the causes of things, unequalled for clearness and precision; add to this a facility of expression and a voice whose varied intonations are soul-subduing music.",,,,
+s00503,"August 19th, 17—. Yesterday the stranger said to me, “You may easily perceive, Captain Walton, that I have suffered great and unparalleled misfortunes.",,,,
+s00506,"I do not know that the relation of my disasters will be useful to you; yet, when I reflect that you are pursuing the same course, exposing yourself to the same dangers which have rendered me what I am, I imagine that you may deduce an apt moral from my tale, one that may direct you if you succeed in your undertaking and console you in case of failure.",,,,
+s00507,Prepare to hear of occurrences which are usually deemed marvellous.,,,,
+s00508,"Were we among the tamer scenes of nature I might fear to encounter your unbelief, perhaps your ridicule; but many things will appear possible in these wild and mysterious regions which would provoke the laughter of those unacquainted with the ever-varied powers of nature; nor can I doubt but that my tale conveys in its series internal evidence of the truth of the events of which it is composed.”",nature,34,40,NATURE
+s00508,"Were we among the tamer scenes of nature I might fear to encounter your unbelief, perhaps your ridicule; but many things will appear possible in these wild and mysterious regions which would provoke the laughter of those unacquainted with the ever-varied powers of nature; nor can I doubt but that my tale conveys in its series internal evidence of the truth of the events of which it is composed.”",nature,265,271,NATURE
+s00510,"I felt the greatest eagerness to hear the promised narrative, partly from curiosity and partly from a strong desire to ameliorate his fate if it were in my power.",,,,
+s00511,I expressed these feelings in my answer.,,,,
+s00512,"“I thank you,” he replied, “for your sympathy, but it is useless; my fate is nearly fulfilled.",,,,
+s00514,"I understand your feeling,” continued he, perceiving that I wished to interrupt him; “but you are mistaken, my friend, if thus you will allow me to name you; nothing can alter my destiny; listen to my history, and you will perceive how irrevocably it is determined.”",,,,
+s00515,He then told me that he would commence his narrative the next day when I should be at leisure.,,,,
+s00516,This promise drew from me the warmest thanks.,,,,
+s00517,"I have resolved every night, when I am not imperatively occupied by my duties, to record, as nearly as possible in his own words, what he has related during the day.",,,,
+s00518,"If I should be engaged, I will at least make notes.",,,,
+s00519,"This manuscript will doubtless afford you the greatest pleasure; but to me, who know him, and who hear it from his own lips—with what interest and sympathy shall I read it in some future day!",,,,
+s00520,"Even now, as I commence my task, his full-toned voice swells in my ears; his lustrous eyes dwell on me with all their melancholy sweetness; I see his thin hand raised in animation, while the lineaments of his face are irradiated by the soul within.",,,,
+s00521,"Strange and harrowing must be his story, frightful the storm which embraced the gallant vessel on its course and wrecked it—thus!",storm,55,60,WEATHER
+s00524,"and when I gaze on thee I seem as in a trance sublime and strange To muse on my own separate fantasy, My own, my human mind, which passively Now renders and receives fast influencings, Holding an unremitting interchange With the clear universe of things around; One legion of wild thoughts, whose wandering wings Now float above thy darkness, and now rest Where that or thou art no unbidden guest, In the still cave of the witch Poesy, Seeking among the shadows that pass by Ghosts of all things that are, some shade of thee, Some phantom, some faint image; till the breast From which they fled recalls them, thou art there!",,,,
+s00525,"Some say that gleams of a remoter world Visit the soul in sleep,—that death is slumber, And that its shapes the busy thoughts outnumber Of those who wake and live.—I look on high; Has some unknown omnipotence unfurled The veil of life and death?",,,,
+s00526,"or do I lie In dream, and does the mightier world of sleep Spread far around and inaccessibly Its circles?",,,,
+s00529,"rude, bare, and high, Ghastly, and scarred, and riven.—Is this the scene Where the old Earthquake-daemon taught her young Ruin? Were these their toys?",,,,
+s00531,None can reply—all seems eternal now.,,,,
+s00540,"Mont Blanc yet gleams on high—the power is there, The still and solemn power of many sights, And many sounds, and much of life and death.",Blanc,5,10,LANDSCAPE
+s00540,"Mont Blanc yet gleams on high—the power is there, The still and solemn power of many sights, And many sounds, and much of life and death.",sights,85,91,LANDSCAPE
+s00543,"The secret strength of things Which governs thought, and to the infinite dome Of heaven is as a law, inhabits thee!",heaven,81,87,WEATHER
+s00551,"If even I were as in my boyhood, and could be The comrade of thy wanderings over Heaven, As then, when to outstrip thy skiey speed Scarce seemed a vision; I would ne’er have striven As thus with thee in prayer in my sore need.",Heaven,81,87,WEATHER
+s00553,I fall upon the thorns of life!,,,,
+s00555,"Make me thy lyre, even as the forest is: What if my leaves are falling like its own!",forest,30,36,FLORA
+s00555,"Make me thy lyre, even as the forest is: What if my leaves are falling like its own!",leaves,52,58,FLORA
+s00556,"The tumult of thy mighty harmonies Will take from both a deep, autumnal tone, Sweet though in sadness.",,,,
+s00557,"Be thou, Spirit fierce, My spirit!",Spirit,9,15,NATURE
+s00557,"Be thou, Spirit fierce, My spirit!",spirit,27,33,NATURE
+s00558,"Be thou me, impetuous one!",,,,
+s00559,Drive my dead thoughts over the universe Like withered leaves to quicken a new birth!,leaves,55,61,FLORA
+s00560,"And, by the incantation of this verse, Scatter, as from an unextinguished hearth Ashes and sparks, my words among mankind!",sparks,91,97,WEATHER
+s00561,Be through my lips to unawakened earth The trumpet of a prophecy!,,,,
+s00582,"Higher still and higher From the earth thou springest Like a cloud of fire; The blue deep thou wingest, And singing still dost soar, and soaring ever singest.",earth,33,38,LANDSCAPE
+s00582,"Higher still and higher From the earth thou springest Like a cloud of fire; The blue deep thou wingest, And singing still dost soar, and soaring ever singest.",cloud,61,66,WEATHER
+s00582,"Higher still and higher From the earth thou springest Like a cloud of fire; The blue deep thou wingest, And singing still dost soar, and soaring ever singest.",fire,70,74,WEATHER
+s00584,Thou dost float and run; Like an unbodied joy whose race is just begun.,,,,
+s00585,"The pale purple even Melts around thy flight; Like a star of Heaven, In the broad daylight Thou art unseen, but yet I hear thy shrill delight, Keen as are the arrows Of that silver sphere, Whose intense lamp narrows In the white dawn clear Until we hardly see—we feel that it is there.",purple,9,15,WEATHER
+s00585,"The pale purple even Melts around thy flight; Like a star of Heaven, In the broad daylight Thou art unseen, but yet I hear thy shrill delight, Keen as are the arrows Of that silver sphere, Whose intense lamp narrows In the white dawn clear Until we hardly see—we feel that it is there.",star,53,57,WEATHER
+s00585,"The pale purple even Melts around thy flight; Like a star of Heaven, In the broad daylight Thou art unseen, but yet I hear thy shrill delight, Keen as are the arrows Of that silver sphere, Whose intense lamp narrows In the white dawn clear Until we hardly see—we feel that it is there.",Heaven,61,67,WEATHER
+s00585,"The pale purple even Melts around thy flight; Like a star of Heaven, In the broad daylight Thou art unseen, but yet I hear thy shrill delight, Keen as are the arrows Of that silver sphere, Whose intense lamp narrows In the white dawn clear Until we hardly see—we feel that it is there.",daylight,82,90,WEATHER
+s00585,"The pale purple even Melts around thy flight; Like a star of Heaven, In the broad daylight Thou art unseen, but yet I hear thy shrill delight, Keen as are the arrows Of that silver sphere, Whose intense lamp narrows In the white dawn clear Until we hardly see—we feel that it is there.",lamp,203,207,WEATHER
+s00585,"The pale purple even Melts around thy flight; Like a star of Heaven, In the broad daylight Thou art unseen, but yet I hear thy shrill delight, Keen as are the arrows Of that silver sphere, Whose intense lamp narrows In the white dawn clear Until we hardly see—we feel that it is there.",dawn,229,233,WEATHER
+s00587,What thou art we know not; What is most like thee?,,,,
+s00591,"Chorus Hymeneal, Or triumphal chant, Matched with thine would be all But an empty vaunt, A thing wherein we feel there is some hidden want.",,,,
+s00594,What shapes of sky or plain?,sky,15,18,WEATHER
+s00595,What love of thine own kind?,,,,
+s00596,what ignorance of pain?,,,,
+s00597,With thy clear keen joyance Languor cannot be: Shadow of annoyance Never came near thee:,,,,
+s00598,Thou lovest—but ne’er knew love’s sad satiety.,,,,
+s00599,"Waking or asleep, Thou of death must deem Things more true and deep Than we mortals dream, Or how could thy notes flow in such a crystal stream?",,,,
+s00600,"We look before and after, And pine for what is not: Our sincerest laughter With some pain is fraught; Our sweetest songs are those that tell of saddest thought.",,,,
+s00601,"Yet if we could scorn Hate, and pride, and fear; If we were things born Not to shed a tear, I know not how thy joy we ever should come near.",,,,
+s00602,"Better than all measures Of delightful sound, Better than all treasures That in books are found, Thy skill to poet were, thou scorner of the ground!",,,,
+s00603,"Teach me half the gladness That thy brain must know, Such harmonious madness From my lips would flow The world should listen then—as I am listening now.",,,,
+s00604,"It is an ancient Mariner, And he stoppeth one of three.",,,,
+s00605,"""By thy long grey beard and glittering eye, Now wherefore stopp'st thou me?",,,,
+s00606,"""The Bridegroom's doors are opened wide, And I am next of kin; The guests are met, the feast is set: May'st hear the merry din.""",,,,
+s00607,"He holds him with his skinny hand, ""There was a ship,"" quoth he.",,,,
+s00608,"unhand me, grey-beard loon!""",,,,
+s00610,He holds him with his glittering eye--,,,,
+s00611,"The Wedding-Guest stood still, And listens like a three years child: The Mariner hath his will.",,,,
+s00612,"The Wedding-Guest sat on a stone: He cannot chuse but hear; And thus spake on that ancient man, The bright-eyed Mariner.",,,,
+s00613,"The ship was cheered, the harbour cleared, Merrily did we drop Below the kirk, below the hill, Below the light-house top.",harbour,26,33,LANDSCAPE
+s00613,"The ship was cheered, the harbour cleared, Merrily did we drop Below the kirk, below the hill, Below the light-house top.",hill,89,93,LANDSCAPE
+s00616,"Higher and higher every day, Till over the mast at noon-- The Wedding-Guest here beat his breast, For he heard the loud bassoon.",noon,51,55,WEATHER
+s00617,"The bride hath paced into the hall, Red as a rose is she; Nodding their heads before her goes The merry minstrelsy.",rose,45,49,FLORA
+s00618,"The Wedding-Guest he beat his breast, Yet he cannot chuse but hear; And thus spake on that ancient man, The bright-eyed Mariner.",,,,
+s00623,The ice was all between.,,,,
+s00624,"The ice was here, the ice was there, The ice was all around: It cracked and growled, and roared and howled, Like noises in a swound!",ice,4,7,WEATHER
+s00624,"The ice was here, the ice was there, The ice was all around: It cracked and growled, and roared and howled, Like noises in a swound!",ice,22,25,WEATHER
+s00624,"The ice was here, the ice was there, The ice was all around: It cracked and growled, and roared and howled, Like noises in a swound!",ice,41,44,WEATHER
+s00626,"It ate the food it ne'er had eat, And round and round it flew.",,,,
+s00627,The ice did split with a thunder-fit; The helmsman steered us through!,ice,4,7,WEATHER
+s00627,The ice did split with a thunder-fit; The helmsman steered us through!,thunder,25,32,WEATHER
+s00629,"In mist or cloud, on mast or shroud, It perched for vespers nine;",mist,3,7,WEATHER
+s00629,"In mist or cloud, on mast or shroud, It perched for vespers nine;",cloud,11,16,WEATHER
+s00631,"""God save thee, ancient Mariner!",,,,
+s00644,The very deep did rot: O Christ!,,,,
+s00645,That ever this should be!,,,,
+s00646,"Yea, slimy things did crawl with legs Upon the slimy sea.",sea,53,56,LANDSCAPE
+s00647,"About, about, in reel and rout The death-fires danced at night;",night,57,62,WEATHER
+s00650,"And every tongue, through utter drought, Was withered at the root; We could not speak, no more than if We had been choked with soot.",drought,32,39,WEATHER
+s00651,what evil looks Had I from old and young!,,,,
+s00652,"Instead of the cross, the Albatross About my neck was hung.",Albatross,26,35,FAUNA
+s00653,There passed a weary time.,,,,
+s00654,"Each throat Was parched, and glazed each eye.",,,,
+s00655,A weary time!,,,,
+s00656,a weary time!,,,,
+s00657,"How glazed each weary eye, When looking westward, I beheld A something in the sky.",sky,78,81,WEATHER
+s00658,"At first it seemed a little speck, And then it seemed a mist: It moved and moved, and took at last A certain shape, I wist.",mist,56,60,WEATHER
+s00659,"A speck, a mist, a shape, I wist!",mist,11,15,WEATHER
+s00660,And still it neared and neared:,,,,
+s00662,"With throats unslaked, with black lips baked, We could not laugh nor wail; Through utter drought all dumb we stood!",drought,89,96,WEATHER
+s00663,"I bit my arm, I sucked the blood, And cried, A sail!",,,,
+s00664,"With throats unslaked, with black lips baked, Agape they heard me call: Gramercy!",,,,
+s00665,"they for joy did grin, And all at once their breath drew in, As they were drinking all.",,,,
+s00666,she tacks no more!,,,,
+s00668,The western wave was all a-flame The day was well nigh done!,wave,12,16,LANDSCAPE
+s00668,The western wave was all a-flame The day was well nigh done!,day,37,40,WEATHER
+s00671,"As if through a dungeon-grate he peered, With broad and burning face.",-,23,24,LANDSCAPE
+s00672,"(thought I, and my heart beat loud)",,,,
+s00673,How fast she nears and nears!,,,,
+s00675,"Are those her ribs through which the Sun Did peer, as through a grate?",Sun,37,40,WEATHER
+s00676,And is that Woman all her crew?,,,,
+s00677,Is that a DEATH?,,,,
+s00678,and are there two?,,,,
+s00679,Is DEATH that woman's mate?,,,,
+s00682,"Quoth she, and whistles thrice.",,,,
+s00684,Off shot the spectre-bark.,,,,
+s00685,We listened and looked sideways up!,,,,
+s00686,"Fear at my heart, as at a cup, My life-blood seemed to sip!",,,,
+s00689,"Four times fifty living men, (And I heard nor sigh nor groan)",,,,
+s00691,"The souls did from their bodies fly,-- They fled to bliss or woe!",souls,4,9,NATURE
+s00692,"And every soul, it passed me by, Like the whizz of my CROSS-BOW!",,,,
+s00694,I fear thy skinny hand!,,,,
+s00696,"""I fear thee and thy glittering eye, And thy skinny hand, so brown.""--",,,,
+s00697,"Fear not, fear not, thou Wedding-Guest!",,,,
+s00698,This body dropt not down.,,,,
+s00700,And never a saint took pity on My soul in agony.,,,,
+s00701,"The many men, so beautiful!",,,,
+s00702,And they all dead did lie: And a thousand thousand slimy things Lived on; and so did I.,,,,
+s00704,"I looked to Heaven, and tried to pray: But or ever a prayer had gusht, A wicked whisper came, and made my heart as dry as dust.",Heaven,12,18,WEATHER
+s00708,"Seven days, seven nights, I saw that curse, And yet I could not die.",,,,
+s00712,"Within the shadow of the ship I watched their rich attire: Blue, glossy green, and velvet black, They coiled and swam; and every track Was a flash of golden fire.",,,,
+s00713,O happy living things!,,,,
+s00716,"it is a gentle thing, Beloved from pole to pole!",,,,
+s00718,"She sent the gentle sleep from Heaven, That slid into my soul.",sleep,20,25,WEATHER
+s00718,"She sent the gentle sleep from Heaven, That slid into my soul.",Heaven,31,37,WEATHER
+s00720,"My lips were wet, my throat was cold, My garments all were dank; Sure I had drunken in my dreams, And still my body drank.",,,,
+s00721,"I moved, and could not feel my limbs: I was so light--almost I thought that I had died in sleep, And was a blessed ghost.",,,,
+s00723,The upper air burst into life!,air,10,13,WEATHER
+s00724,"And a hundred fire-flags sheen, To and fro they were hurried about!",flags,19,24,WEATHER
+s00730,"They groaned, they stirred, they all uprose, Nor spake, nor moved their eyes; It had been strange, even in a dream, To have seen those dead men rise.",,,,
+s00731,"The helmsman steered, the ship moved on; Yet never a breeze up blew; The mariners all 'gan work the ropes, Where they were wont to do: They raised their limbs like lifeless tools-- We were a ghastly crew.",breeze,53,59,WEATHER
+s00732,"The body of my brother's son, Stood by me, knee to knee: The body and I pulled at one rope, But he said nought to me.",,,,
+s00733,"""I fear thee, ancient Mariner!""",,,,
+s00734,"Be calm, thou Wedding-Guest! '",,,,
+s00735,"Twas not those souls that fled in pain, Which to their corses came again, But a troop of spirits blest:",,,,
+s00736,"For when it dawned--they dropped their arms, And clustered round the mast; Sweet sounds rose slowly through their mouths, And from their bodies passed.",,,,
+s00737,"Around, around, flew each sweet sound, Then darted to the Sun; Slowly the sounds came back again, Now mixed, now one by one.",Sun,58,61,WEATHER
+s00739,"And now 'twas like all instruments, Now like a lonely flute;",,,,
+s00740,"And now it is an angel's song, That makes the Heavens be mute.",Heavens,46,53,WEATHER
+s00742,"Till noon we quietly sailed on, Yet never a breeze did breathe: Slowly and smoothly went the ship, Moved onward from beneath.",noon,5,9,WEATHER
+s00742,"Till noon we quietly sailed on, Yet never a breeze did breathe: Slowly and smoothly went the ship, Moved onward from beneath.",breeze,44,50,WEATHER
+s00744,"The sails at noon left off their tune, And the ship stood still also.",,,,
+s00747,"How long in that same fit I lay, I have not to declare; But ere my living life returned, I heard and in my soul discerned Two VOICES in the air.",air,140,143,WEATHER
+s00748,"""Is it he?""",,,,
+s00749,"quoth one, ""Is this the man?",,,,
+s00752,"The other was a softer voice, As soft as honey-dew: Quoth he, ""The man hath penance done, And penance more will do.""",,,,
+s00753,"But tell me, tell me!",,,,
+s00754,"speak again, Thy soft response renewing--",,,,
+s00758,"If he may know which way to go; For she guides him smooth or grim See, brother, see!",,,,
+s00759,how graciously She looketh down on him.,,,,
+s00763,"more high, more high",,,,
+s00764,"Or we shall be belated: For slow and slow that ship will go, When the Mariner's trance is abated.",,,,
+s00767,"The pang, the curse, with which they died, Had never passed away: I could not draw my eyes from theirs, Nor turn them up to pray.",,,,
+s00768,And now this spell was snapt: once more I viewed the ocean green.,ocean,53,58,LANDSCAPE
+s00769,"And looked far forth, yet little saw Of what had else been seen-- Like one that on a lonesome road Doth walk in fear and dread, And having once turned round walks on, And turns no more his head; Because he knows, a frightful fiend Doth close behind him tread.",,,,
+s00772,"Swiftly, swiftly flew the ship, Yet she sailed softly too: Sweetly, sweetly blew the breeze-- On me alone it blew.",breeze,85,91,WEATHER
+s00773,Oh! dream of joy!,,,,
+s00774,is this indeed The light-house top I see?,,,,
+s00776,is this the kirk?,,,,
+s00778,"We drifted o'er the harbour-bar, And I with sobs did pray-- O let me be awake, my God!",-bar,27,31,LANDSCAPE
+s00779,Or let me sleep alway.,,,,
+s00782,"The rock shone bright, the kirk no less, That stands above the rock: The moonlight steeped in silentness The steady weathercock.",rock,4,8,LANDSCAPE
+s00782,"The rock shone bright, the kirk no less, That stands above the rock: The moonlight steeped in silentness The steady weathercock.",rock,63,67,LANDSCAPE
+s00782,"The rock shone bright, the kirk no less, That stands above the rock: The moonlight steeped in silentness The steady weathercock.",moonlight,73,82,WEATHER
+s00782,"The rock shone bright, the kirk no less, That stands above the rock: The moonlight steeped in silentness The steady weathercock.",weathercock,116,127,WEATHER
+s00784,"A little distance from the prow Those crimson shadows were: I turned my eyes upon the deck-- Oh, Christ!",,,,
+s00785,what saw I there!,,,,
+s00786,"Each corse lay flat, lifeless and flat, And, by the holy rood!",,,,
+s00787,"A man all light, a seraph-man, On every corse there stood.",,,,
+s00788,"This seraph band, each waved his hand: It was a heavenly sight!",,,,
+s00789,"They stood as signals to the land, Each one a lovely light: This seraph-band, each waved his hand, No voice did they impart-- No voice; but",land,29,33,LANDSCAPE
+s00790,the silence sank Like music on my heart.,,,,
+s00791,"But soon I heard the dash of oars; I heard the Pilot's cheer; My head was turned perforce away, And I saw a boat appear.",,,,
+s00792,"The Pilot, and the Pilot's boy, I heard them coming fast: Dear Lord in Heaven!",,,,
+s00793,it was a joy The dead men could not blast.,,,,
+s00794,I saw a third--I heard his voice: It is the Hermit good!,,,,
+s00798,How loudly his sweet voice he rears!,,,,
+s00799,He loves to talk with marineres That come from a far countree.,,,,
+s00801,The skiff-boat neared:,,,,
+s00802,"I heard them talk, ""Why this is strange, I trow!",,,,
+s00803,"Where are those lights so many and fair, That signal made but now?""",,,,
+s00804,"""Strange, by my faith!""",,,,
+s00805,"the Hermit said-- ""And they answered not our cheer!",,,,
+s00806,The planks looked warped!,,,,
+s00807,"and see those sails, How thin they are and sere!",,,,
+s00809,it hath a fiendish look-- (The Pilot made reply),,,,
+s00810,"I am a-feared""--""Push on, push on!""",,,,
+s00811,Said the Hermit cheerily.,,,,
+s00812,"The boat came closer to the ship, But I nor spake nor stirred; The boat came close beneath the ship, And straight a sound was heard.",,,,
+s00816,"I moved my lips--the Pilot shrieked And fell down in a fit; The holy Hermit raised his eyes, And prayed where he did sit.",,,,
+s00817,"I took the oars: the Pilot's boy, Who now doth crazy go, Laughed loud and long, and all the while His eyes went to and fro.",,,,
+s00818,"quoth he, ""full plain I see, The Devil knows how to row.""",,,,
+s00819,"And now, all in my own countree, I stood on the firm land!",,,,
+s00820,"The Hermit stepped forth from the boat, And scarcely he could stand.",,,,
+s00821,"""O shrieve me, shrieve me, holy man!""",,,,
+s00822,The Hermit crossed his brow.,,,,
+s00823,"""Say quick,"" quoth he, ""I bid thee say--",,,,
+s00824,"What manner of man art thou?""",,,,
+s00825,"Forthwith this frame of mine was wrenched With a woeful agony, Which forced me to begin my tale; And then it left me free.",,,,
+s00826,"Since then, at an uncertain hour, That agony returns; And till my ghastly tale is told, This heart within me burns.",,,,
+s00827,"I pass, like night, from land to land; I have strange power of speech; That moment that his face I see, I know the man that must hear me: To him my tale I teach.",night,13,18,WEATHER
+s00827,"I pass, like night, from land to land; I have strange power of speech; That moment that his face I see, I know the man that must hear me: To him my tale I teach.",land,25,29,LANDSCAPE
+s00827,"I pass, like night, from land to land; I have strange power of speech; That moment that his face I see, I know the man that must hear me: To him my tale I teach.",land,33,37,LANDSCAPE
+s00828,What loud uproar bursts from that door!,,,,
+s00829,"The wedding-guests are there: But in the garden-bower the bride And bride-maids singing are: And hark the little vesper bell, Which biddeth me to prayer!",,,,
+s00830,"this soul hath been Alone on a wide wide sea: So lonely 'twas, that God himself Scarce seemed there to be.",sea,41,44,LANDSCAPE
+s00831,"O sweeter than the marriage-feast, 'Tis sweeter far to me, To walk together to the kirk With a goodly company!-- To walk together to the kirk, And all together pray, While each to his great Father bends, Old men, and babes, and loving friends, And youths and maidens gay!",,,,
+s00832,"but this I tell To thee, thou Wedding-Guest!",,,,
+s00834,"He prayeth best, who loveth best All things both great and small; For the dear God who loveth us He made and loveth all.",,,,
+s00835,"The Mariner, whose eye is bright, Whose beard with age is hoar, Is gone: and now the Wedding-Guest Turned from the bridegroom's door.",,,,
+s00836,"He went like one that hath been stunned, And is of sense forlorn: A sadder and a wiser man, He rose the morrow morn.",,,,
+s00837,"Five years have passed; five summers, with the length Of five long winters!",winters,67,74,WEATHER
+s00839,"again Do I behold these steep and lofty cliffs, Which on a wild secluded scene impress Thoughts of more deep seclusion; and connect The landscape with the quiet of the sky.",cliffs,40,46,LANDSCAPE
+s00839,"again Do I behold these steep and lofty cliffs, Which on a wild secluded scene impress Thoughts of more deep seclusion; and connect The landscape with the quiet of the sky.",landscape,136,145,LANDSCAPE
+s00839,"again Do I behold these steep and lofty cliffs, Which on a wild secluded scene impress Thoughts of more deep seclusion; and connect The landscape with the quiet of the sky.",sky,168,171,WEATHER
+s00842,"Though absent long, These forms of beauty have not been to me, As is a landscape to a blind man’s eye: But oft, in lonely rooms, and mid the din Of towns and cities, I have owed to them, In hours of weariness, sensations sweet, Felt in the blood, and felt along the heart, And passing even into my purer mind With tranquil restoration:--feelings too Of unremembered pleasure; such, perhaps, As may have had no trivial influence On that best portion of a good man’s life; His little, nameless, unremembered acts Of kindness and of love.",landscape,71,80,LANDSCAPE
+s00842,"Though absent long, These forms of beauty have not been to me, As is a landscape to a blind man’s eye: But oft, in lonely rooms, and mid the din Of towns and cities, I have owed to them, In hours of weariness, sensations sweet, Felt in the blood, and felt along the heart, And passing even into my purer mind With tranquil restoration:--feelings too Of unremembered pleasure; such, perhaps, As may have had no trivial influence On that best portion of a good man’s life; His little, nameless, unremembered acts Of kindness and of love.",towns,148,153,LANDSCAPE
+s00844,"If this Be but a vain belief, yet, oh!",,,,
+s00845,"how oft, In darkness, and amid the many shapes Of joyless day-light; when the fretful stir Unprofitable, and the fever of the world, Have hung upon the beatings of my heart, How oft, in spirit, have I turned to thee O sylvan Wye!",darkness,12,20,WEATHER
+s00845,"how oft, In darkness, and amid the many shapes Of joyless day-light; when the fretful stir Unprofitable, and the fever of the world, Have hung upon the beatings of my heart, How oft, in spirit, have I turned to thee O sylvan Wye!",day,58,61,WEATHER
+s00846,"Thou wanderer through the woods, How often has my spirit turned to thee!",woods,26,31,FLORA
+s00847,"And now, with gleams of half-extinguish’d thought, With many recognitions dim and faint, And somewhat of a sad perplexity, The picture of the mind revives again: While here I stand, not only with the sense Of present pleasure, but with pleasing thoughts That in this moment there is life and food For future years.",mind,142,146,NATURE
+s00849,"For nature then (The coarser pleasures of my boyish days, And their glad animal movements all gone by,)",nature,4,10,NATURE
+s00849,"For nature then (The coarser pleasures of my boyish days, And their glad animal movements all gone by,)",animal,73,79,FAUNA
+s00850,To me was all in all.--I cannot paint What then I was.,,,,
+s00852,"Not for this Faint I, nor mourn nor murmur: other gifts Have followed, for such loss, I would believe, Abundant recompence.",,,,
+s00857,"yet a little while May I behold in thee what I was once, My dear, dear Sister!",,,,
+s00860,"then, If solitude, or fear, or pain, or grief, Should be thy portion, with what healing thoughts Of tender joy wilt thou remember me, And these my exhortations!",,,,
+s00862,with far deeper zeal Of holier love.,,,,
+s00864,"I heard a thousand blended notes, While in a grove I sate reclined, In that sweet mood when pleasant thoughts Bring sad thoughts to the mind.",grove,45,50,FLORA
+s00865,To her fair works did nature link The human soul that through me ran; And much it griev’d my heart to think What man has made of man.,nature,22,28,NATURE
+s00865,To her fair works did nature link The human soul that through me ran; And much it griev’d my heart to think What man has made of man.,soul,44,48,NATURE
+s00869,"If I these thoughts may not prevent, If such be of my creed the plan, Have I not reason to lament What man has made of man?",,,,
+s00870,"my friend, and clear your looks, Why all this toil and trouble?",,,,
+s00871,"my friend, and quit your books, Or surely you’ll grow double.",,,,
+s00873,"Books! ’tis a dull and endless strife, Come, hear the woodland linnet, How sweet his music; on my life There’s more of wisdom in it.",woodland,54,62,FLORA
+s00874,how blithe the throstle sings!,,,,
+s00876,"She has a world of ready wealth, Our minds and hearts to bless-- Spontaneous wisdom breathed by health, Truth breathed by chearfulness.",,,,
+s00878,Sweet is the lore which nature brings; Our meddling intellect Misshapes the beauteous forms of things; --We murder to dissect.,nature,24,30,NATURE
+s00879,"Enough of science and of art; Close up these barren leaves; Come forth, and bring with you a heart That watches and receives.",leaves,52,58,FLORA

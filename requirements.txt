@@ -1,3 +1,10 @@
 requests
 spacy
 nltk
+transformers
+torch
+numpy
+datasets
+pandas
+iterative-stratification
+seqeval
