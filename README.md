@@ -6,7 +6,7 @@
 
 ## About
 
-**Understory** is an NLP project applying computational methods to Romantic-era English literature. A custom-trained named entity recognizer first identifies non-human natural entities across the corpus - categorized into flora, fauna, weather, landscape, and personified natural force - before a dependency-based grammatical analysis determines the syntactic role each one occupies in its sentence. Together, these two steps investigate how nature acts within these texts — and how often it doesn't.
+**Understory** is an NLP project applying computational methods to Romantic-era English literature. A custom-trained named entity recognizer first identifies non-human natural entities across the corpus - categorized into flora, fauna, weather, landscape, and personified natural force - before a dependency-based grammatical analysis determines the syntactic role each one occupies in its sentence. Together, these two steps investigate how nature acts within these texts - and how often it doesn't.
 
 The project is named for the forest understory: the less visible layer where networks of life quietly unfold - a metaphor for uncovering hidden patterns within literary texts.
 
