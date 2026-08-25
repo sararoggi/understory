@@ -1,5 +1,6 @@
 requests
 spacy
+spacy-transformers
 nltk
 transformers
 torch
@@ -8,3 +9,4 @@ datasets
 pandas
 iterative-stratification
 seqeval
+matplotlib
