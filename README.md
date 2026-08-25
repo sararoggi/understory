@@ -1,5 +1,9 @@
 <div align="center">
-  <img src="./assets/git_header.png" alt="Understory Header" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/dark_header.png">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/light_header.png">
+    <img src="./assets/light_header.png" alt="Understory Header" width="100%">
+  </picture>
 </div>
 
 ---
