@@ -3,6 +3,7 @@ spacy
 spacy-transformers
 nltk
 transformers
+accelerate
 torch
 numpy
 datasets
@@ -10,3 +11,4 @@ pandas
 iterative-stratification
 seqeval
 matplotlib
+flask

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --color-bg: #FEFAE0;
+  --color-bg-card: #FFFFFF;
+  --color-text: #283618;
+  --color-accent: #606C38;
+  --color-primary: #BC6C25;
+  --color-primary-hover: #DDA15E;
+  --color-border: #DDA15E;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 6px 48px;
+  background-color: #283618;
+  border-bottom: none;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 96px;
+  width: auto;
+  transform: scale(1.6);
+  transform-origin: left center;
+}
+
+.navbar-links a {
+  margin-left: 28px;
+  color: var(--color-bg);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navbar-links a:hover {
+  color: var(--color-primary-hover);
+}
+
+main {
+  max-width: 1400px;
+  margin: 36px auto;
+  padding: 0 48px;
+}
+
+h1, h2, h3 {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.analyze-grid {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* Both panels stack their title above the bordered box */
+.left-panel,
+.right-panel-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.right-panel-wrapper {
+  position: sticky;
+  top: 24px;
+}
+
+.panel-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.text-panel {
+  width: 100%;
+  min-height: 420px;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 1.15rem;
+  padding: 24px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background-color: var(--color-bg-card);
+  color: var(--color-text);
+  line-height: 2;
+}
+
+textarea.text-panel {
+  font-family: monospace;
+  resize: vertical;
+}
+
+.text-panel.output-mode {
+  overflow-y: auto;
+  max-height: 75vh;
+}
+
+.right-panel {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 24px;
+  min-height: 420px;
+}
+
+.entities-count {
+  margin: 0 0 12px 0;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--color-accent);
+  opacity: 0.75;
+}
+
+.placeholder {
+  color: var(--color-accent);
+  font-style: italic;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* filter-bar lives inside .toolbar on the output screen */
+.toolbar .filter-bar {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+button, .button-secondary {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--color-primary);
+  color: #FEFAE0;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover { background-color: var(--color-primary-hover); }
+
+.file-input-hidden {
+  display: none;
+}
+
+.btn-file {
+  display: inline-block;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 1rem;
+  background-color: var(--color-primary);
+  color: #FEFAE0;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  user-select: none;
+}
+
+.btn-file:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.file-name {
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  font-style: italic;
+}
+
+.button-secondary {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.notice {
+  color: var(--color-primary);
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.entity {
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: opacity 0.2s ease;
+  opacity: 1;
+}
+
+.entity.dimmed {
+  opacity: 0.12;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  user-select: none;
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 4px 12px;
+  transition: background-color 0.15s ease;
+}
+
+.filter-chip:hover {
+  background-color: #f0ead0;
+}
+
+.filter-chip input[type="checkbox"] {
+  accent-color: var(--color-accent);
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 12px;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid var(--color-border);
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+th {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* Category column (2nd td) — text colored to match highlighted spans */
+tr[data-category="WEATHER"]   td:nth-child(2) { color: #c9a800; font-weight: bold; }
+tr[data-category="LANDSCAPE"] td:nth-child(2) { color: #56A3A6; font-weight: bold; }
+tr[data-category="FLORA"]     td:nth-child(2) { color: #6e8000; font-weight: bold; }
+tr[data-category="FAUNA"]     td:nth-child(2) { color: #A30000; font-weight: bold; }
+tr[data-category="NATURE"]    td:nth-child(2) { color: #331E38; font-weight: bold; }
+
+@media (max-width: 900px) {
+  .analyze-grid { grid-template-columns: 1fr; }
+  .right-panel { position: static; }
+}
