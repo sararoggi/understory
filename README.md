@@ -12,7 +12,7 @@
 
 **Understory** is an NLP project applying computational methods to Romantic-era English literature. A custom-trained named entity recognizer first identifies non-human natural entities across the corpus - categorized into flora, fauna, weather, landscape, and personified natural force - before a dependency-based grammatical analysis determines the syntactic role each one occupies in its sentence. Together, these two steps investigate how nature acts within these texts - and how often it doesn't.
 
-The project is named for the forest understory: the less visible layer where networks of life quietly unfold - a metaphor for uncovering hidden patterns within literary texts.
+The project takes its name from the forest understory, a less visible layer of interconnected life, used here as a metaphor for identifying the hidden structures and patterns within literary texts.
 
 ## Corpus
 
@@ -48,7 +48,7 @@ Each notebook has its own purpose and can be run independently, provided its pre
 | **FAUNA** | Animals, birds - literal, non-human creatures |
 | **WEATHER** | Weather, atmospheric, and celestial phenomena |
 | **LANDSCAPE** | Topographic and geological features, including named places |
-| **NATURE** | Personified nature-as-force — embodied spirit-characters, pantheistic animating forces |
+| **NATURE** | Personified nature-as-force - embodied spirit-characters, pantheistic animating forces |
 
 Full annotation methodology is documented in [`docs/annotation_guidelines.md`](docs/annotation_guidelines.md).
 
@@ -58,4 +58,17 @@ Full annotation methodology is documented in [`docs/annotation_guidelines.md`](d
 pip install -r requirements.txt
 ```
 
-Run `notebooks/setup.ipynb` first — it downloads the corpus and caches the needed resources for later notebooks.
+Run `notebooks/setup.ipynb` first - it downloads the corpus and caches the needed resources for later notebooks.
+
+## Running the App
+
+A Flask web app (`app/`) lets you paste or upload a text and see its natural entities highlighted with their grammatical role.
+
+**Prerequisite:** `notebooks/ner_model.ipynb` must have been run first, so `checkpoints/final/saved_model` exists - the app loads the trained model at startup.
+
+```bash
+cd app
+python app.py
+```
+
+Then open **http://127.0.0.1:5001** in your browser to explore the understory of your own text.
