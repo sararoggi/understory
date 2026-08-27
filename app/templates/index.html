@@ -4,59 +4,47 @@
 {% block content %}
 <form method="POST" action="{{ url_for('analyze') }}" enctype="multipart/form-data">
 
-    {# — Top toolbar: always above both panels — #}
     {% if highlighted_html %}
-    <div class="toolbar">
-        <a href="{{ url_for('index') }}" class="button-secondary">← Analyze another text</a>
-        <div class="filter-bar" id="filterBar">
-            {% set categories = entities|map(attribute='label')|unique|list %}
-            {% for cat in categories %}
-            <label class="filter-chip">
-                <input type="checkbox" class="category-toggle" value="{{ cat }}" checked>
-                {{ cat }}
-            </label>
-            {% endfor %}
+    {# — Shared header row: both columns mirror the grid below — #}
+    <div class="results-header">
+        <div class="results-header-left">
+            <a href="{{ url_for('index') }}" class="button-secondary">← analyze another text</a>
+            <div class="filter-bar" id="filterBar">
+                {% set categories = entities|map(attribute='label')|unique|list %}
+                {% for cat in categories %}
+                <label class="filter-chip">
+                    <input type="checkbox" class="category-toggle" value="{{ cat }}" checked>
+                    {{ cat }}
+                </label>
+                {% endfor %}
+            </div>
         </div>
-    </div>
-    {% else %}
-    <div class="toolbar">
-        <button type="submit">Run</button>
-
-        {# Hidden native file input, triggered by the styled label button #}
-        <input type="file" name="file" accept=".txt" id="fileInput" class="file-input-hidden">
-        <label for="fileInput" class="btn-file" id="fileLabel">Choose file</label>
-        <span class="file-name" id="fileName">No file selected</span>
-
-        {% if truncated %}
-        <span class="notice">Note: input was truncated to 5,000 characters.</span>
-        {% endif %}
-    </div>
-    {% endif %}
-
-    {# — Two-column grid, both boxes flush at the same top — #}
-    <div class="analyze-grid">
-
-        <div class="left-panel">
-            {% if highlighted_html %}
-            <h3 class="panel-title">Tagged text</h3>
-            <div class="text-panel output-mode" id="taggedText">{{ highlighted_html | safe }}</div>
-            {% else %}
-            <textarea class="text-panel" name="text" rows="14"
-                placeholder="Paste text here...">{{ input_text }}</textarea>
+        <div class="results-header-right">
+            <h3 class="analysis-title">Analysis</h3>
+            {% if entities %}
+            <p class="entities-count">{{ entities|length }} entities found</p>
             {% endif %}
         </div>
+    </div>
 
+    {# — Two-column grid: content only — #}
+    <div class="analyze-grid">
+        <div class="left-panel">
+            <div class="text-panel output-mode" id="taggedText">{{ highlighted_html | safe }}</div>
+        </div>
         <div class="right-panel-wrapper">
-            <h3 class="panel-title">Analysis</h3>
             <div class="right-panel">
                 {% if entities %}
-                <p class="entities-count">{{ entities|length }} entities found</p>
+                <div class="table-scroll">
                 <table id="entityTable">
+                    <thead>
                     <tr>
                         <th>Entity</th>
                         <th>Category</th>
                         <th>Role</th>
                     </tr>
+                    </thead>
+                    <tbody>
                     {% for e in entities %}
                     <tr data-category="{{ e.label }}">
                         <td>{{ e.text }}</td>
@@ -64,16 +52,39 @@
                         <td>{{ e.role }}</td>
                     </tr>
                     {% endfor %}
+                    </tbody>
                 </table>
+                </div>
                 {% elif highlighted_html %}
                 <p class="placeholder">No natural entities were found.</p>
-                {% else %}
-                <p class="placeholder">Paste or upload a passage and click Run to see results here.</p>
                 {% endif %}
             </div>
         </div>
-
     </div>
+
+    {% else %}
+    {# — Input state: single centered column — #}
+    <div class="input-layout">
+        <div class="input-toolbar">
+            {# Hidden native file input #}
+            <input type="file" name="file" accept=".txt" id="fileInput" class="file-input-hidden">
+            <label for="fileInput" class="btn-file" id="fileLabel">Choose a file</label>
+
+            <button type="submit" class="btn-run">Run</button>
+
+            <a href="{{ url_for('example') }}" class="btn-file">Example</a>
+        </div>
+
+        {% if truncated %}
+        <p class="notice">Note: input was truncated to 5,000 characters.</p>
+        {% endif %}
+
+        <span class="file-name" id="fileName"></span>
+
+        <textarea class="text-panel input-textarea" name="text" rows="18"
+            placeholder="Paste or write your text here..">{{ input_text }}</textarea>
+    </div>
+    {% endif %}
 
 </form>
 

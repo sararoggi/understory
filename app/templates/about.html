@@ -3,12 +3,12 @@
 
 {% block content %}
 <div class="about-page">
-    <h1>About Understory</h1>
+    <h1>About the project</h1>
     <p>
         Understory is an NLP project applying computational methods to Romantic-era English literature. A custom-trained named entity recognizer first identifies non-human natural entities across the corpus - categorized into flora, fauna, weather, landscape, and personified natural force - before a dependency-based grammatical analysis determines the syntactic role each one occupies in its sentence.
     </p>
     <p>
-        Together, these two steps investigate how nature acts within literary texts — and how often it doesn't.
+        Together, these two steps investigate how nature acts within literary texts - and how often it doesn't.
     </p>
 
     <p>
@@ -16,14 +16,16 @@
     </p>
 
     <h2>Entity Categories</h2>
-    <table>
-        <tr><th>Category</th><th>Covers</th></tr>
-        <tr><td>FLORA</td><td>Trees, flowers, moss, woods, foliage</td></tr>
-        <tr><td>FAUNA</td><td>Animals, birds — literal, non-human creatures</td></tr>
-        <tr><td>WEATHER</td><td>Weather, atmospheric, and celestial phenomena</td></tr>
-        <tr><td>LANDSCAPE</td><td>Topographic and geological features</td></tr>
-        <tr><td>NATURE</td><td>Personified nature-as-force</td></tr>
-    </table>
+    <div style="overflow-x: auto;">
+        <table>
+            <tr><th>Category</th><th>Covers</th></tr>
+            <tr><td>FLORA</td><td>Trees, flowers, moss, woods, foliage</td></tr>
+            <tr><td>FAUNA</td><td>Animals, birds - literal, non-human creatures</td></tr>
+            <tr><td>WEATHER</td><td>Weather, atmospheric, and celestial phenomena</td></tr>
+            <tr><td>LANDSCAPE</td><td>Topographic and geological features</td></tr>
+            <tr><td>NATURE</td><td>Personified nature-as-force</td></tr>
+        </table>
+    </div>
     
 </div>
 {% endblock %}

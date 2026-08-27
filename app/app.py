@@ -35,7 +35,31 @@ DEP_LABEL_NAME = {
     "ROOT": "Root",
 }
 
-# Load models ONCE at startup, not per-request
+EXAMPLE_TEXT = """I spent the following day roaming through the valley. I stood beside
+the sources of the Arveiron, which take their rise in a glacier, that
+with slow pace is advancing down from the summit of the hills to
+barricade the valley. The abrupt sides of vast mountains were before
+me; the icy wall of the glacier overhung me; a few shattered pines were
+scattered around; and the solemn silence of this glorious
+presence-chamber of imperial Nature was broken only by the brawling
+waves or the fall of some vast fragment, the thunder sound of the
+avalanche or the cracking, reverberated along the mountains, of the
+accumulated ice, which, through the silent working of immutable laws,
+was ever and anon rent and torn, as if it had been but a plaything in
+their hands. These sublime and magnificent scenes afforded me the
+greatest consolation that I was capable of receiving. They elevated me
+from all littleness of feeling, and although they did not remove my
+grief, they subdued and tranquillised it. In some degree, also, they
+diverted my mind from the thoughts over which it had brooded for the
+last month. I retired to rest at night; my slumbers, as it were,
+waited on and ministered to by the assemblance of grand shapes which I
+had contemplated during the day. They congregated round me; the
+unstained snowy mountain-top, the glittering pinnacle, the pine woods,
+and ragged bare ravine, the eagle, soaring amidst the clouds—they all
+gathered round me and bade me be at peace."""
+
+
+# load models ONCE at startup
 print("Loading NER model...")
 if not os.path.exists(FINAL_MODEL_DIR):
     raise FileNotFoundError(
@@ -50,7 +74,7 @@ print("Loading spaCy parser...")
 nlp = spacy.load("en_core_web_trf")
 
 
-# Reused functions from notebooks
+# reused functions from notebooks
 def decode_bio_to_spans(offsets, word_ids, labels, id_to_label):
     spans, current, current_word_id = [], None, None
     previous_word_id = None
@@ -106,7 +130,10 @@ def get_entity_role(start_char, end_char, doc):
     if span is None or len(span) == 0:
         return "unknown"
     dep = span.root.dep_
-    return DEP_LABEL_NAME.get(dep, dep)
+    if dep in DEP_LABEL_NAME:
+        return DEP_LABEL_NAME[dep]
+    explanation = spacy.explain(dep)
+    return explanation.capitalize() if explanation else dep
 
 
 def luminance(hex_color):
@@ -123,7 +150,6 @@ def build_highlighted_html(text, entities):
     html_parts = []
     cursor = 0
     for e in entities:
-        # Escape plain text segments to prevent broken HTML
         plain = html_module.escape(text[cursor:e["start"]])
         html_parts.append(plain.replace("\n", "<br>"))
         color = CATEGORY_COLORS.get(e["label"], "#CCCCCC")
@@ -140,6 +166,46 @@ def build_highlighted_html(text, entities):
     tail = html_module.escape(text[cursor:])
     html_parts.append(tail.replace("\n", "<br>"))
     return "".join(html_parts)
+
+def chunk_text_by_sentences(text, nlp, max_chars=1500):
+    doc = nlp(text)
+    chunks = []
+    current_start = 0
+    current_end = 0
+
+    for sent in doc.sents:
+        if sent.end_char - current_start > max_chars and current_end > current_start:
+            chunks.append((current_start, current_end))
+            current_start = sent.start_char
+        current_end = sent.end_char
+
+    if current_end > current_start:
+        chunks.append((current_start, current_end))
+
+    return chunks
+
+# run across the full text
+def analyze_full_text(text, model, tokenizer, label_to_id, id_to_label, nlp):
+    chunk_bounds = chunk_text_by_sentences(text, nlp)
+    all_entities = []
+
+    for chunk_start, chunk_end in chunk_bounds:
+        chunk_text = text[chunk_start:chunk_end]
+        chunk_doc = nlp(chunk_text)
+        spans = predict_with_threshold(chunk_text, model, tokenizer, label_to_id, id_to_label)
+
+        for s in spans:
+            role = get_entity_role(s["start"], s["end"], chunk_doc)
+            all_entities.append({
+                "start": s["start"] + chunk_start,
+                "end": s["end"] + chunk_start,
+                "text": text[s["start"] + chunk_start : s["end"] + chunk_start],
+                "label": s["label"],
+                "role": role,
+            })
+
+    return all_entities
+
 
 # Flask app
 app = Flask(__name__)
@@ -166,26 +232,23 @@ def analyze():
     if not text:
         return render_template("index.html", highlighted_html=None, entities=None, input_text="")
 
-    MAX_CHARS = 5000
+    MAX_CHARS = 50000
     truncated = len(text) > MAX_CHARS
     if truncated:
         text = text[:MAX_CHARS]
 
-    doc = nlp(text)
-    spans = predict_with_threshold(text, final_model, tokenizer, label_to_id, id_to_label)
-
-    entities = []
-    for s in spans:
-        role = get_entity_role(s["start"], s["end"], doc)
-        entities.append({
-            "start": s["start"], "end": s["end"],
-            "text": text[s["start"]:s["end"]],
-            "label": s["label"], "role": role,
-        })
+    entities = analyze_full_text(text, final_model, tokenizer, label_to_id, id_to_label, nlp)
 
     highlighted_html = build_highlighted_html(text, entities)
     return render_template("index.html", highlighted_html=highlighted_html, entities=entities,
                             input_text=text, truncated=truncated)
+
+@app.route("/example")
+def example():
+    entities = analyze_full_text(EXAMPLE_TEXT, final_model, tokenizer, label_to_id, id_to_label, nlp)
+    highlighted_html = build_highlighted_html(EXAMPLE_TEXT, entities)
+    return render_template("index.html", highlighted_html=highlighted_html, entities=entities,
+                            input_text=EXAMPLE_TEXT, truncated=False)
 
 @app.route("/about")
 def about():
