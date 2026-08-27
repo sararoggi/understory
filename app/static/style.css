@@ -234,7 +234,15 @@ button:hover {
   display: flex;
   align-items: center;
   gap: 20px;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 720px;
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .input-textarea {
@@ -281,7 +289,24 @@ button:hover {
 
 .button-secondary:hover {
   color: var(--color-primary-hover);
-  text-decoration: underline;
+}
+
+button.button-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 1rem;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button.button-secondary:hover {
+  background-color: transparent;
+  color: var(--color-primary-hover);
 }
 
 .notice {

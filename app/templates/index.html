@@ -8,7 +8,7 @@
     {# — Shared header row: both columns mirror the grid below — #}
     <div class="results-header">
         <div class="results-header-left">
-            <a href="{{ url_for('index') }}" class="button-secondary">← analyze another text</a>
+            <a href="{{ url_for('index') }}" class="button-secondary">← Analyze another text</a>
             <div class="filter-bar" id="filterBar">
                 {% set categories = entities|map(attribute='label')|unique|list %}
                 {% for cat in categories %}
@@ -66,13 +66,16 @@
     {# — Input state: single centered column — #}
     <div class="input-layout">
         <div class="input-toolbar">
-            {# Hidden native file input #}
-            <input type="file" name="file" accept=".txt" id="fileInput" class="file-input-hidden">
-            <label for="fileInput" class="btn-file" id="fileLabel">Choose a file</label>
+            <div class="toolbar-left">
+                {# Hidden native file input #}
+                <input type="file" name="file" accept=".txt" id="fileInput" class="file-input-hidden">
+                <label for="fileInput" class="btn-file" id="fileLabel">Choose a file</label>
 
-            <button type="submit" class="btn-run">Run</button>
+                <a href="{{ url_for('example') }}" class="btn-file">Example</a>
+            </div>
 
-            <a href="{{ url_for('example') }}" class="btn-file">Example</a>
+            <button type="submit" class="button-secondary">Explore →</button>
+
         </div>
 
         {% if truncated %}
