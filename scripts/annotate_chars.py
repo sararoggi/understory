@@ -54,22 +54,22 @@ def compute_offsets(input_path: str, output_path: str):
                 warnings.append(f"Row {r_idx + 2} [{sentence_id}] {span!r}: NOT FOUND in text.")
             continue
 
-        # Covers both reduplicative idioms (1 row) and genuinely repeated mentions where the counts line up.
+        # covers both reduplicative idioms (1 row) and genuinely repeated mentions where the counts line up.
         if n_rows == n_occ:
             pairs = list(zip(row_indices, occurrences))
 
-        # Reduplicative idiom case: one tagged row, the word repeats in the text (e.g. "peak" in "from peak to peak"). Only one occurrence needs an offset -> take the first.
+        # reduplicative idiom case: one tagged row, the word repeats in the text (e.g. "peak" in "from peak to peak"). Only one occurrence needs an offset -> take the first.
         elif n_rows == 1 and n_occ > 1:
             pairs = [(row_indices[0], occurrences[0])]
 
-        # More tagged rows than the text actually contains - a real problem (duplicate row, or a typo in target_span/sentence_text).
+        # more tagged rows than the text actually contains - a real problem (duplicate row, or a typo in target_span/sentence_text).
         elif n_rows > n_occ:
             warnings.append(
                 f"[{sentence_id}] {span!r}: {n_rows} rows, only {n_occ} occurrence(s) -- check for a duplicate row."
             )
             pairs = list(zip(row_indices, occurrences))
 
-        # More occurrences than rows, and more than one row -- genuinely ambiguous which occurrences were meant. Match in file order and flag for a manual check.
+        # more occurrences than rows, and more than one row -- genuinely ambiguous which occurrences were meant. Match in file order and flag for a manual check.
         else:
             warnings.append(
                 f"[{sentence_id}] {span!r}: {n_rows} rows, {n_occ} occurrences -- matched in order, verify."
