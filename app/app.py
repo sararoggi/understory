@@ -4,6 +4,7 @@ import torch
 import spacy
 from flask import Flask, render_template, request
 from transformers import AutoModelForTokenClassification, AutoTokenizer
+from werkzeug.middleware.dispatcher import DispatcherMiddleware
 
 # Paths
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -254,6 +255,11 @@ def example():
 def about():
     return render_template("about.html")
 
+# In production, mount the Flask app under a subpath for reverse proxying via nginx.
+# This ensures all routes are served under /understory instead of /.
+production = DispatcherMiddleware(None, {
+    '/understory': app
+})
 
 if __name__ == "__main__":
     app.run(debug=True, use_reloader=False, port=5001)

@@ -64,7 +64,7 @@ Run `notebooks/setup.ipynb` first - it downloads the corpus and caches the neede
 
 A Flask web app (`app/`) lets you paste or upload a text and see its natural entities highlighted with their grammatical role.
 
-**Prerequisite:** `notebooks/ner_model.ipynb` must have been run first, so `checkpoints/final/saved_model` exists - the app loads the trained model at startup.
+**Prerequisite:** `notebooks/ner_model.ipynb` must have been run first, so `checkpoints/final/saved_model` exists.
 
 ```bash
 cd app
