@@ -2,37 +2,32 @@
 {% block title %}Analyze{% endblock %}
 
 {% block content %}
-<form method="POST" action="{{ url_for('analyze') }}" enctype="multipart/form-data">
+<form id="analyzeForm" method="POST" action="{{ url_for('analyze') }}" enctype="multipart/form-data">
 
     {% if highlighted_html %}
-    {# — Shared header row: both columns mirror the grid below — #}
-    <div class="results-header">
-        <div class="results-header-left">
-            <a href="{{ url_for('index') }}" class="button-secondary">← Analyze another text</a>
-            <div class="filter-bar" id="filterBar">
-                {% set categories = entities|map(attribute='label')|unique|list %}
-                {% for cat in categories %}
-                <label class="filter-chip">
-                    <input type="checkbox" class="category-toggle" value="{{ cat }}" checked>
-                    {{ cat }}
-                </label>
-                {% endfor %}
-            </div>
-        </div>
-        <div class="results-header-right">
-            <h3 class="analysis-title">Analysis</h3>
-            {% if entities %}
-            <p class="entities-count">{{ entities|length }} entities found</p>
-            {% endif %}
-        </div>
-    </div>
-
-    {# — Two-column grid: content only — #}
     <div class="analyze-grid">
         <div class="left-panel">
+            <div class="header-left">
+                <a href="{{ url_for('index') }}" class="button-secondary">← Analyze another text</a>
+                <div class="filter-bar" id="filterBar">
+                    {% set categories = entities|map(attribute='label')|unique|list %}
+                    {% for cat in categories %}
+                    <label class="filter-chip" data-category="{{ cat }}">
+                        <input type="checkbox" class="category-toggle" value="{{ cat }}" checked>
+                        {{ cat }}
+                    </label>
+                    {% endfor %}
+                </div>
+            </div>
             <div class="text-panel output-mode" id="taggedText">{{ highlighted_html | safe }}</div>
         </div>
         <div class="right-panel-wrapper">
+            <div class="results-header-right">
+                <h3 class="analysis-title">Analysis</h3>
+                {% if entities %}
+                <p class="entities-count">{{ entities|length }} entities found</p>
+                {% endif %}
+            </div>
             <div class="right-panel">
                 {% if entities %}
                 <div class="table-scroll">
@@ -64,28 +59,55 @@
 
     {% else %}
     {# — Input state: single centered column — #}
+    <div class="hero-section">
+        <h1>Discover the natural world hidden inside literary texts.</h1>
+        <p>
+            Bring your own text to uncover which natural entities appear, how they are categorized, and their roles. Paste a passage or upload a file to begin.
+        </p>
+    </div>
+
+
     <div class="input-layout">
         <div class="input-toolbar">
             <div class="toolbar-left">
                 {# Hidden native file input #}
                 <input type="file" name="file" accept=".txt" id="fileInput" class="file-input-hidden">
-                <label for="fileInput" class="btn-file" id="fileLabel">Choose a file</label>
-
-                <a href="{{ url_for('example') }}" class="btn-file">Example</a>
+                <label for="fileInput" class="btn-outline" id="fileLabel">Choose a file</label>
+                <a href="{{ url_for('example') }}" class="btn-outline">Example</a>
             </div>
-
-            <button type="submit" class="button-secondary">Explore →</button>
-
+            <span class="file-name" id="fileName"></span>
         </div>
 
         {% if truncated %}
         <p class="notice">Note: input was truncated to 5,000 characters.</p>
         {% endif %}
 
-        <span class="file-name" id="fileName"></span>
+        <div class="textarea-wrapper">
+            <textarea class="text-panel input-textarea" name="text" rows="10"
+                placeholder="Your text here...">{{ input_text }}</textarea>
+            <button type="submit" class="btn-run">Run</button>
+        </div>
 
-        <textarea class="text-panel input-textarea" name="text" rows="18"
-            placeholder="Paste or write your text here and Explore its hidden understory.">{{ input_text }}</textarea>
+        <h2 class="below-section-title">About the project</h2>
+
+        <div class="about-description">
+            <p>
+                <strong>Understory</strong> is an NLP project exploring the presence and agency of the natural world in literary texts. The model was fine-tuned on Romantic-era English literature to identify <strong>non-human natural entities</strong> and classify them into <strong>five categories</strong>:
+            </p>
+            <ul>
+                <li><strong>Flora:</strong> Trees, flowers, moss, woods, foliage</li>
+                <li><strong>Fauna:</strong> Animals, birds - literal, non-human creatures</li>
+                <li><strong>Weather:</strong> Weather, atmospheric, and celestial phenomena</li>
+                <li><strong>Landscape:</strong> Topographic and geological features</li>
+                <li><strong>Nature:</strong> Personified nature-as-force</li>
+            </ul>
+            <p>
+                Then, a dependency-based grammatical analysis examines the <strong>role</strong> each one plays within its sentence. Rather than simply counting references to nature, it looks at how these entities are positioned within the language of a text: whether they appear as subjects, objects, or in other grammatical roles, revealing the different ways the natural world participates in the events of the text.
+            </p>
+            <p>
+                By combining named entity recognition with grammatical analysis, Understory offers a way to explore not only <strong>which</strong> forms of nature appear in a text, but also <strong>how</strong> they are represented through language.
+            </p>
+        </div>
     </div>
     {% endif %}
 
@@ -129,5 +151,18 @@
     document.querySelectorAll('.category-toggle').forEach(box => {
         box.addEventListener('change', applyFilters);
     });
+
+    // Prevent submission if empty
+    const analyzeForm = document.getElementById('analyzeForm');
+    const inputTextArea = document.querySelector('.input-textarea');
+    if (analyzeForm) {
+        analyzeForm.addEventListener('submit', (e) => {
+            const hasFile = fileInput && fileInput.files.length > 0;
+            const hasText = inputTextArea && inputTextArea.value.trim().length > 0;
+            if (!hasFile && !hasText) {
+                e.preventDefault();
+            }
+        });
+    }
 </script>
 {% endblock %}

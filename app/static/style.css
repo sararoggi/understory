@@ -27,7 +27,7 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   padding: 6px 48px;
   background-color: #283618;
@@ -43,20 +43,7 @@ body {
   height: 96px;
   width: auto;
   transform: scale(1.6);
-  transform-origin: left center;
-}
-
-.navbar-links a {
-  margin-left: 28px;
-  color: var(--color-bg);
-  text-decoration: none;
-  font-weight: normal;
-  font-size: 1.1rem;
-  font-family: 'Libre Baskerville', Georgia, serif;
-}
-
-.navbar-links a:hover {
-  color: var(--color-primary-hover);
+  transform-origin: center center;
 }
 
 main {
@@ -80,24 +67,21 @@ h3 {
   align-items: start;
 }
 
-.results-header {
-  display: grid;
-  grid-template-columns: 2.2fr 1fr;
-  gap: 32px;
-  align-items: end;
-  margin-bottom: 16px;
-}
-
-.results-header-left {
+.header-left {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  margin-bottom: 24px;
+  min-height: 40px;
 }
 
 .results-header-right {
   display: flex;
+  justify-content: flex-end;
   align-items: baseline;
   gap: 12px;
+  margin-bottom: 24px;
+  min-height: 40px;
 }
 
 .left-panel,
@@ -118,10 +102,11 @@ h3 {
   min-height: 420px;
   font-family: 'Source Serif 4', Georgia, serif;
   font-size: 1.15rem;
-  padding: 24px;
-  border: 1.5px solid var(--color-border-dark);
-  background-color: transparent;
-  color: var(--color-border-dark);
+  padding: 32px;
+  border: 1px solid #E6E5C7;
+  border-radius: 8px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   line-height: 2;
 }
 
@@ -150,7 +135,7 @@ textarea.text-panel {
 }
 
 .entities-count {
-  margin: 0 0 12px 0;
+  margin: 0;
   font-size: 0.88rem;
   font-style: italic;
   color: var(--color-accent);
@@ -191,11 +176,6 @@ button:hover {
   background-color: var(--color-primary-hover);
 }
 
-.btn-run {
-  font-size: 0.95rem;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  transition: background-color 0.15s ease;
-}
 
 .file-input-hidden {
   display: none;
@@ -219,6 +199,57 @@ button:hover {
 }
 
 .btn-file:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.btn-outline {
+  display: inline-block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  vertical-align: middle;
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  user-select: none;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary);
+  color: #FEFAE0;
+}
+
+.textarea-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+}
+
+.btn-run {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  display: inline-block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  vertical-align: middle;
+  background-color: var(--color-primary);
+  color: #FEFAE0;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  user-select: none;
+}
+
+.btn-run:hover {
   background-color: var(--color-primary-hover);
 }
 
@@ -248,9 +279,10 @@ button:hover {
 .input-textarea {
   width: 100%;
   max-width: 720px;
-  min-height: 480px;
+  min-height: 300px;
   background-color: var(--color-bg-card);
-  border: 1.5px solid var(--color-border-dark);
+  border: 1px solid var(--color-accent);
+  border-radius: 8px;
   font-family: monospace;
   font-size: 1rem;
   color: var(--color-border-dark);
@@ -263,7 +295,6 @@ button:hover {
 .input-textarea:focus {
   border-color: var(--color-border);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-border) 30%, transparent);
-  border-radius: 0px;
 }
 
 .input-textarea::placeholder {
@@ -316,46 +347,74 @@ button.button-secondary:hover {
 }
 
 .entity {
-  padding: 2px 6px;
+  padding: 2px 8px;
   border-radius: 4px;
   transition: opacity 0.2s ease;
   opacity: 1;
 }
 
-.entity.dimmed {
-  opacity: 0.12;
-}
 
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
-  margin-bottom: 14px;
+  margin: 0;
 }
 
 .filter-chip {
   display: inline-flex;
   align-items: center;
-  gap: 3px;
-  font-size: 0.62rem;
+  gap: 0;
+  font-size: 0.65rem;
   font-family: 'Libre Baskerville', Georgia, serif;
   text-transform: uppercase;
-  color: var(--color-text);
+  color: #6b7280;
   cursor: pointer;
   user-select: none;
   background-color: transparent;
-  border: 1px solid var(--color-primary);
-  border-radius: 20px;
-  padding: 1px 7px;
-  transition: background-color 0.15s ease;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 4px 12px;
+  transition: all 0.15s ease;
 }
 
 .filter-chip:hover {
-  background-color: #f0ead0;
+  background-color: #f3f4f6;
 }
 
 .filter-chip input[type="checkbox"] {
-  accent-color: var(--color-accent);
+  display: none;
+}
+
+.filter-chip[data-category="WEATHER"]:has(input:checked) {
+  background-color: #c9a800;
+  border-color: #c9a800;
+  color: #FEFAE0;
+}
+
+.filter-chip[data-category="LANDSCAPE"]:has(input:checked) {
+  background-color: #56A3A6;
+  border-color: #56A3A6;
+  color: #FEFAE0;
+}
+
+.filter-chip[data-category="FLORA"]:has(input:checked) {
+  background-color: #6e8000;
+  border-color: #6e8000;
+  color: #FEFAE0;
+}
+
+.filter-chip[data-category="FAUNA"]:has(input:checked) {
+  background-color: #A30000;
+  border-color: #A30000;
+  color: #FEFAE0;
+}
+
+.filter-chip[data-category="NATURE"]:has(input:checked) {
+  background-color: #331E38;
+  border-color: #331E38;
+  color: #FEFAE0;
 }
 
 table {
@@ -367,16 +426,17 @@ table {
   max-height: 560px;
   overflow-y: auto;
   overflow-x: auto;
-  border: 1.5px solid var(--color-border-dark);
+  border: 1px solid #E6E5C7;
+  border-radius: 8px;
 }
 
 th,
 td {
-  border-right: 1px solid var(--color-border-dark);
-  border-bottom: 1px solid var(--color-border-dark);
+  border-right: 1px solid #E6E5C7;
+  border-bottom: 1px solid #E6E5C7;
   border-top: none;
   border-left: none;
-  padding: 12px;
+  padding: 16px;
   text-align: left;
   font-size: 0.95rem;
   color: var(--color-border-dark);
@@ -427,9 +487,54 @@ tr[data-category="NATURE"] td:nth-child(2) {
   font-weight: bold;
 }
 
-/* About page table */
-.about-page table {
-  border: 1.5px solid var(--color-border-dark);
+/* Hero section on index page */
+.hero-section {
+  max-width: 960px;
+  margin: 0 auto 48px auto;
+  text-align: center;
+}
+
+.hero-section h1 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.hero-section p {
+  margin: 0 auto;
+  max-width: 720px;
+  font-size: 1.15rem;
+  line-height: 1.75;
+}
+
+.below-section-title {
+  width: 100%;
+  max-width: 960px;
+  margin-top: 4rem;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.about-description {
+  width: 100%;
+  max-width: 960px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-top: 0.75rem;
+}
+
+.about-description p {
+  margin-bottom: 1rem;
+}
+
+.about-description ul {
+  margin-bottom: 1rem;
+  padding-left: 24px;
+}
+
+.about-description li {
+  margin-bottom: 0.5rem;
 }
 
 @media (max-width: 900px) {
@@ -437,15 +542,15 @@ tr[data-category="NATURE"] td:nth-child(2) {
     grid-template-columns: 1fr;
   }
 
-  .results-header {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .results-header-left {
+  .header-left {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+  }
+
+  .results-header-right {
+    justify-content: flex-start;
+    margin-top: 32px;
   }
 
   .right-panel {
@@ -462,6 +567,40 @@ tr[data-category="NATURE"] td:nth-child(2) {
   }
 }
 
+/* Footer */
+.site-footer {
+  margin-top: 80px;
+  padding: 24px 48px;
+  background-color: var(--color-text);
+  text-align: center;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 0.85rem;
+  color: var(--color-bg);
+  opacity: 0.85;
+}
+
+.site-footer p {
+  margin: 12px 0 0 0;
+}
+
+.footer-github {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-bg);
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.footer-github:hover {
+  opacity: 1;
+}
+
+.footer-github svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;
@@ -475,9 +614,6 @@ tr[data-category="NATURE"] td:nth-child(2) {
     transform-origin: center center;
   }
 
-  .navbar-links a {
-    margin: 0 12px;
-  }
 
   main {
     padding: 0 16px;

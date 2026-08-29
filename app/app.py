@@ -251,9 +251,6 @@ def example():
     return render_template("index.html", highlighted_html=highlighted_html, entities=entities,
                             input_text=EXAMPLE_TEXT, truncated=False)
 
-@app.route("/about")
-def about():
-    return render_template("about.html")
 
 # In production, mount the Flask app under a subpath for reverse proxying via nginx.
 # This ensures all routes are served under /understory instead of /.
