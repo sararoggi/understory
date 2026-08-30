@@ -10,7 +10,9 @@
 
 ## About
 
-**Understory** is an NLP project applying computational methods to Romantic-era English literature. A custom-trained named entity recognizer first identifies non-human natural entities across the corpus - categorized into flora, fauna, weather, landscape, and personified natural force - before a dependency-based grammatical analysis determines the syntactic role each one occupies in its sentence. Together, these two steps investigate how nature acts within these texts - and how often it doesn't.
+**Understory** exploring the presence and agency of the natural world in literary texts. A BERT-based named entity recognizer, fine-tuned on a manually annotated corpus of Romantic-era English literature, first **identifies non-human natural entities** across the texts and classifies them into flora, fauna, weather, landscape, or personified natural force. Then, a dependency-based grammatical analysis **examines the role** each one plays within its sentence.
+
+Together, these two steps investigate how nature acts within these texts - and how often it doesn't.
 
 The project takes its name from the forest understory, a less visible layer of interconnected life, used here as a metaphor for identifying the hidden structures and patterns within literary texts.
 
@@ -36,6 +38,7 @@ notebooks/annotation.ipynb   →  WordNet-based candidate pooling for annotation
         ↓
 notebooks/ner_model.ipynb                →  (1) fine-tune BERT for NER, (2) run the final model over the unannotated corpus
 notebooks/dependency_analysis.ipynb  →  classify grammatical role per entity, verify parser choice
+notebooks/llm_comparison.ipynb
 ```
 
 Each notebook has its own purpose and can be run independently, provided its prerequisites have already been run once.
@@ -60,9 +63,11 @@ pip install -r requirements.txt
 
 Run `notebooks/setup.ipynb` first - it downloads the corpus and caches the needed resources for later notebooks.
 
-## Running the App
+## Try the App
 
-A Flask web app (`app/`) lets you paste or upload a text and see its natural entities highlighted with their grammatical role.
+**Live at https://sidereus.dev/understory/**
+
+Or run it locally:
 
 **Prerequisite:** `notebooks/ner_model.ipynb` must have been run first, so `checkpoints/final/saved_model` exists.
 

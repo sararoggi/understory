@@ -9,7 +9,7 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
-# Environment variables / secrets (e.g. ANTHROPIC_API_KEY)
+# Environment variables
 .env
 
 # Model checkpoints
@@ -17,4 +17,3 @@ checkpoints/
 
 # OS clutter
 .DS_Store
-Thumbs.db
