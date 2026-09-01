@@ -10,7 +10,7 @@
 
 ## About
 
-**Understory** exploring the presence and agency of the natural world in literary texts. A BERT-based named entity recognizer, fine-tuned on a manually annotated corpus of Romantic-era English literature, first **identifies non-human natural entities** across the texts and classifies them into flora, fauna, weather, landscape, or personified natural force. Then, a dependency-based grammatical analysis **examines the role** each one plays within its sentence.
+**Understory** is an NLP project exploring the presence and agency of the natural world in literary texts. A BERT-based named entity recognizer, fine-tuned on a manually annotated corpus of Romantic-era English literature, first **identifies non-human natural entities** across the texts and classifies them into flora, fauna, weather, landscape, or personified natural force. Then, a dependency-based grammatical analysis **examines the role** each one plays within its sentence.
 
 Together, these two steps investigate how nature acts within these texts - and how often it doesn't.
 
@@ -38,7 +38,7 @@ notebooks/annotation.ipynb   →  WordNet-based candidate pooling for annotation
         ↓
 notebooks/ner_model.ipynb                →  (1) fine-tune BERT for NER, (2) run the final model over the unannotated corpus
 notebooks/dependency_analysis.ipynb  →  classify grammatical role per entity, verify parser choice
-notebooks/llm_comparison.ipynb
+notebooks/llm_analysis.ipynb         →  cross-genre LLM simulation, compared against the real corpus
 ```
 
 Each notebook has its own purpose and can be run independently, provided its prerequisites have already been run once.

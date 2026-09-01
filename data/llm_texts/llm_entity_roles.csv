@@ -1,0 +1,147 @@
+scenario,topic,target_span,entity_type,role
+english_romanticism,a character walking alone at dusk,brow,LANDSCAPE,Object of Preposition
+english_romanticism,a character walking alone at dusk,embers,WEATHER,Active Subject
+english_romanticism,a character walking alone at dusk,day,WEATHER,Object of Preposition
+english_romanticism,a character walking alone at dusk,hills,LANDSCAPE,Object of Preposition
+english_romanticism,a character walking alone at dusk,valley,LANDSCAPE,Object of Preposition
+english_romanticism,a character walking alone at dusk,evening,WEATHER,Possession modifier
+english_romanticism,a character walking alone at dusk,sky,WEATHER,Active Subject
+english_romanticism,a character walking alone at dusk,canopy,WEATHER,Adverbial clause modifier
+english_romanticism,a character walking alone at dusk,pines,FLORA,Object of Preposition
+english_romanticism,a character walking alone at dusk,earth,LANDSCAPE,Object of Preposition
+english_romanticism,a character walking alone at dusk,dew,WEATHER,Noun phrase as adverbial modifier
+english_romanticism,a character walking alone at dusk,moss,FLORA,Object of Preposition
+english_romanticism,a character walking alone at dusk,breath,WEATHER,Active Subject
+english_romanticism,a character walking alone at dusk,night,WEATHER,Compound
+english_romanticism,a character walking alone at dusk,wind,WEATHER,Object of Preposition
+english_romanticism,a character walking alone at dusk,ferns,FLORA,Direct Object
+english_romanticism,a character walking alone at dusk,stream,LANDSCAPE,Object of Preposition
+english_romanticism,an unexpected encounter between two strangers,mists,WEATHER,Object of Preposition
+english_romanticism,an unexpected encounter between two strangers,crag,LANDSCAPE,Direct Object
+english_romanticism,an unexpected encounter between two strangers,sea,LANDSCAPE,Object of Preposition
+english_romanticism,an unexpected encounter between two strangers,sky,WEATHER,Direct Object
+english_romanticism,an unexpected encounter between two strangers,pines,FLORA,Conjoined Element
+english_romanticism,an unexpected encounter between two strangers,mountain,LANDSCAPE,Compound
+english_romanticism,an unexpected encounter between two strangers,evening,WEATHER,Compound
+english_romanticism,an unexpected encounter between two strangers,air,WEATHER,Object of Preposition
+english_romanticism,an unexpected encounter between two strangers,moon,WEATHER,Object of Preposition
+english_romanticism,an unexpected encounter between two strangers,night,WEATHER,Object of Preposition
+english_romanticism,an unexpected encounter between two strangers,shore,LANDSCAPE,Object of Preposition
+english_romanticism,a difficult decision at a turning point,winds,WEATHER,Active Subject
+english_romanticism,a difficult decision at a turning point,shadows,WEATHER,Conjoined Element
+english_romanticism,a difficult decision at a turning point,plain,LANDSCAPE,Object of Preposition
+english_romanticism,a difficult decision at a turning point,sky,WEATHER,Object of Preposition
+english_romanticism,a difficult decision at a turning point,vales,LANDSCAPE,Object of Preposition
+english_romanticism,a difficult decision at a turning point,trees,FLORA,Object of Preposition
+english_romanticism,a difficult decision at a turning point,lightning,WEATHER,Active Subject
+english_romanticism,a difficult decision at a turning point,night,WEATHER,Object of Preposition
+english_romanticism,a difficult decision at a turning point,sea,LANDSCAPE,Active Subject
+english_romanticism,a difficult decision at a turning point,peak,LANDSCAPE,Object of Preposition
+english_romanticism,a difficult decision at a turning point,dark,WEATHER,Active Subject
+english_romanticism,a difficult decision at a turning point,lightning,WEATHER,Conjoined Element
+english_romanticism,a description of the interior of a room or dwelling,light,WEATHER,Object of Preposition
+english_romanticism,a description of the interior of a room or dwelling,mist,WEATHER,Noun phrase as adverbial modifier
+english_romanticism,a description of the interior of a room or dwelling,hills,LANDSCAPE,Object of Preposition
+english_romanticism,a description of the interior of a room or dwelling,ivy,FLORA,Active Subject
+english_romanticism,a description of the interior of a room or dwelling,Nature,NATURE,Active Subject
+english_romanticism,a description of the interior of a room or dwelling,leaves,FLORA,Active Subject
+english_romanticism,a description of the interior of a room or dwelling,canopy,WEATHER,Direct Object
+english_romanticism,a description of the interior of a room or dwelling,heaven,WEATHER,Object of Preposition
+english_romanticism,a description of the interior of a room or dwelling,clouds,WEATHER,Active Subject
+english_romanticism,a description of the interior of a room or dwelling,air,WEATHER,Active Subject
+english_romanticism,a description of the interior of a room or dwelling,pine,FLORA,Object of Preposition
+english_romanticism,a description of the interior of a room or dwelling,ray,WEATHER,Active Subject
+english_romanticism,a description of the interior of a room or dwelling,sun,WEATHER,Object of Preposition
+american_dystopian,a character walking alone at dusk,sun,WEATHER,Active Subject
+american_dystopian,a character walking alone at dusk,evening,WEATHER,Compound
+american_dystopian,a character walking alone at dusk,air,WEATHER,Object of Preposition
+american_dystopian,a character walking alone at dusk,pavement,LANDSCAPE,Object of Preposition
+american_dystopian,a character walking alone at dusk,avenue,LANDSCAPE,Object of Preposition
+american_dystopian,a character walking alone at dusk,haze,WEATHER,Object of Preposition
+american_dystopian,a character walking alone at dusk,flies,FAUNA,Object of Preposition
+american_dystopian,a character walking alone at dusk,day,WEATHER,Compound
+american_dystopian,a character walking alone at dusk,night,WEATHER,Compound
+american_dystopian,a character walking alone at dusk,light,WEATHER,Object of Preposition
+american_dystopian,a character walking alone at dusk,street,LANDSCAPE,Object of Preposition
+american_dystopian,a character walking alone at dusk,intersection,LANDSCAPE,Object of Preposition
+american_dystopian,an unexpected encounter between two strangers,smog,WEATHER,Object of Preposition
+american_dystopian,an unexpected encounter between two strangers,rain,WEATHER,Object of Preposition
+american_dystopian,an unexpected encounter between two strangers,dandelion,FLORA,Passive Subject
+american_dystopian,an unexpected encounter between two strangers,earth,LANDSCAPE,Object of Preposition
+american_dystopian,an unexpected encounter between two strangers,mist,WEATHER,Object of Preposition
+american_dystopian,a difficult decision at a turning point,leaves,FLORA,Object of Preposition
+american_dystopian,a difficult decision at a turning point,dawn,WEATHER,Direct Object
+american_dystopian,a description of the interior of a room or dwelling,ozone,WEATHER,Object of Preposition
+american_dystopian,a description of the interior of a room or dwelling,sunlit,WEATHER,Adjectival modifier
+american_dystopian,a description of the interior of a room or dwelling,temperature,WEATHER,Active Subject
+russian_literature,a character walking alone at dusk,light,WEATHER,Active Subject
+russian_literature,a character walking alone at dusk,dusk,WEATHER,Object of Preposition
+russian_literature,a character walking alone at dusk,mist,WEATHER,Object of Preposition
+russian_literature,a character walking alone at dusk,embankment,LANDSCAPE,Object of Preposition
+russian_literature,a character walking alone at dusk,chill,WEATHER,Object of Preposition
+russian_literature,a character walking alone at dusk,cold,WEATHER,Appositive
+russian_literature,a character walking alone at dusk,Neva,LANDSCAPE,Object of Preposition
+russian_literature,a character walking alone at dusk,stone,LANDSCAPE,Object of Preposition
+russian_literature,a character walking alone at dusk,sky,WEATHER,Object of Preposition
+russian_literature,a character walking alone at dusk,wind,WEATHER,Object of Preposition
+russian_literature,an unexpected encounter between two strangers,blizzard,WEATHER,Active Subject
+russian_literature,an unexpected encounter between two strangers,frost,WEATHER,Object of Preposition
+russian_literature,an unexpected encounter between two strangers,snow,WEATHER,Object of Preposition
+russian_literature,an unexpected encounter between two strangers,winter,WEATHER,Active Subject
+russian_literature,an unexpected encounter between two strangers,leaves,FLORA,Adverbial clause modifier
+russian_literature,an unexpected encounter between two strangers,tempest,WEATHER,Object of Preposition
+russian_literature,a difficult decision at a turning point,heat,WEATHER,Active Subject
+russian_literature,a difficult decision at a turning point,blizzard,WEATHER,Active Subject
+russian_literature,a difficult decision at a turning point,earth,LANDSCAPE,Direct Object
+russian_literature,a difficult decision at a turning point,flames,WEATHER,Active Subject
+russian_literature,a description of the interior of a room or dwelling,bark,FLORA,Object of Preposition
+russian_literature,a description of the interior of a room or dwelling,sky,WEATHER,Direct Object
+historical_romance,a character walking alone at dusk,rays,WEATHER,Active Subject
+historical_romance,a character walking alone at dusk,sun,WEATHER,Object of Preposition
+historical_romance,a character walking alone at dusk,crags,LANDSCAPE,Object of Preposition
+historical_romance,a character walking alone at dusk,wind,WEATHER,Object of Preposition
+historical_romance,a character walking alone at dusk,path,LANDSCAPE,Object of Preposition
+historical_romance,a character walking alone at dusk,bird,FAUNA,Object of Preposition
+historical_romance,a character walking alone at dusk,gales,WEATHER,Object of Preposition
+historical_romance,a character walking alone at dusk,sky,WEATHER,Object of Preposition
+historical_romance,a character walking alone at dusk,night,WEATHER,Object of Preposition
+historical_romance,a character walking alone at dusk,brow,LANDSCAPE,Object of Preposition
+historical_romance,a character walking alone at dusk,hill,LANDSCAPE,Object of Preposition
+historical_romance,a character walking alone at dusk,mists,WEATHER,Object of Preposition
+historical_romance,an unexpected encounter between two strangers,tempest,WEATHER,Active Subject
+historical_romance,an unexpected encounter between two strangers,crack,WEATHER,Active Subject
+historical_romance,an unexpected encounter between two strangers,thunder,WEATHER,Object of Preposition
+historical_romance,an unexpected encounter between two strangers,moonlight,WEATHER,Object of Preposition
+historical_romance,an unexpected encounter between two strangers,Rain,WEATHER,Active Subject
+historical_romance,an unexpected encounter between two strangers,gale,WEATHER,Object of Preposition
+historical_romance,an unexpected encounter between two strangers,night,WEATHER,Object of Preposition
+historical_romance,an unexpected encounter between two strangers,storm,WEATHER,Object of Preposition
+historical_romance,an unexpected encounter between two strangers,sky,WEATHER,Object of Preposition
+historical_romance,a difficult decision at a turning point,candle,WEATHER,Active Subject
+historical_romance,a difficult decision at a turning point,scaffold,LANDSCAPE,Object of Preposition
+historical_romance,a difficult decision at a turning point,tempest,WEATHER,Active Subject
+historical_romance,a difficult decision at a turning point,storm,WEATHER,Direct Object
+historical_romance,a description of the interior of a room or dwelling,tempest,WEATHER,Object of Preposition
+historical_romance,a description of the interior of a room or dwelling,oak,FLORA,Object of Preposition
+historical_romance,a description of the interior of a room or dwelling,draft,WEATHER,Object of Preposition
+british_fiction,a character walking alone at dusk,sun,WEATHER,Active Subject
+british_fiction,a character walking alone at dusk,ridges,LANDSCAPE,Object of Preposition
+british_fiction,a character walking alone at dusk,hills,LANDSCAPE,Object of Preposition
+british_fiction,a character walking alone at dusk,sky,WEATHER,Direct Object
+british_fiction,a character walking alone at dusk,lane,LANDSCAPE,Object of Preposition
+british_fiction,a character walking alone at dusk,oaks,FLORA,Active Subject
+british_fiction,a character walking alone at dusk,earth,LANDSCAPE,Object of Preposition
+british_fiction,a character walking alone at dusk,dusk,WEATHER,Object of Preposition
+british_fiction,a character walking alone at dusk,day,WEATHER,Object of Preposition
+british_fiction,a character walking alone at dusk,autumn,WEATHER,Compound
+british_fiction,a character walking alone at dusk,breeze,WEATHER,Active Subject
+british_fiction,a character walking alone at dusk,foliage,FLORA,Object of Preposition
+british_fiction,a character walking alone at dusk,leaves,FLORA,Direct Object
+british_fiction,a character walking alone at dusk,night,WEATHER,Object of Preposition
+british_fiction,an unexpected encounter between two strangers,afternoon,WEATHER,Active Subject
+british_fiction,an unexpected encounter between two strangers,drizzle,WEATHER,Object of Preposition
+british_fiction,an unexpected encounter between two strangers,oak,FLORA,Object of Preposition
+british_fiction,an unexpected encounter between two strangers,lane,LANDSCAPE,Object of Preposition
+british_fiction,an unexpected encounter between two strangers,sky,WEATHER,Conjoined Element
+british_fiction,an unexpected encounter between two strangers,mist,WEATHER,Object of Preposition
+british_fiction,a description of the interior of a room or dwelling,afternoon,WEATHER,Object of Preposition
