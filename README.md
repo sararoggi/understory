@@ -10,15 +10,13 @@
 
 ## About
 
-**Understory** is an NLP project exploring the presence and agency of the natural world in literary texts. A BERT-based named entity recognizer, fine-tuned on a manually annotated corpus of Romantic-era English literature, first **identifies non-human natural entities** across the texts and classifies them into flora, fauna, weather, landscape, or personified natural force. Then, a dependency-based grammatical analysis **examines the role** each one plays within its sentence.
-
-Together, these two steps investigate how nature acts within these texts - and how often it doesn't.
+**Understory** investigates the presence and agency of the natural world in literary texts. The grammatical position given to nature – as an active participant or as the object of human action – offers one way of examining how a text imagines the relationship between humans and the natural world. To explore this relationship, a **custom fine-tuned BERT model** identifies non-human natural entities across a corpus of English Romantic literature, classifying them into five categories: flora, fauna, weather, landscape, and nature. A **dependency-based grammatical analysis** then examines the syntactic role each entity occupies within its sentence. Together, these two stages investigate not only which forms of nature appear in the texts, but also how they participate in their language.
 
 The project takes its name from the forest understory, a less visible layer of interconnected life, used here as a metaphor for identifying the hidden structures and patterns within literary texts.
 
 ## Corpus
 
-13 passages spanning 6 authors, ~30,000 words total, sourced from Project Gutenberg:
+13 passages spanning 5 authors, ~30,000 words total, sourced from Project Gutenberg:
 
 | Author | Works |
 |---|---|
@@ -40,8 +38,6 @@ notebooks/ner_model.ipynb                →  (1) fine-tune BERT for NER, (2) ru
 notebooks/dependency_analysis.ipynb  →  classify grammatical role per entity, verify parser choice
 notebooks/llm_analysis.ipynb         →  cross-genre LLM simulation, compared against the real corpus
 ```
-
-Each notebook has its own purpose and can be run independently, provided its prerequisites have already been run once.
 
 ## Entity schema
 
