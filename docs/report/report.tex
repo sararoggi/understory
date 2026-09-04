@@ -43,7 +43,7 @@ The \textbf{computational study of entities} and their animacy provides a method
 
 These perspectives are combined with \textbf{Natural Language Processing} (NLP), using Named Entity Recognition (NER) to identify and classify natural entities and dependency analysis to examine their grammatical relationships. Research on the adaptation of language models to specialized and relatively small datasets further demonstrates the applicability of these methods to domain-specific textual material \cite{dodge:20}.
 
-Understory brings these areas together to translate an ecocritical question into a computationally observable one. Rather than replacing close reading, the analysis is conceived as a complementary tool for detecting patterns across large bodies of text.
+Understory brings these areas together to translate a literary question into a computationally observable one. Rather than replacing close reading, the analysis is conceived as a complementary tool for detecting patterns across large bodies of text.
 
 
 \section{Data and Methods}
@@ -84,12 +84,12 @@ Samuel Taylor Coleridge & The Rime of the Ancient Mariner & 3822 \\
 \end{tabular}
 \end{table*}
 
-Then, candidate sentences were identified using a \textbf{WordNet-derived lexicon} \cite{miller:95} of potentially nature-related terms. Each sentence was assigned a density score, based on the number of candidates it contained, and grouped into four bands (0, 1, 2, 3+). The final sample was stratified across these bands to ensure both sparse and entity-rich sentences were represented. This step was fully automatic and served only to guide sentence sampling; manual annotation began after the 305-sentence sample had been fixed. \\
+Then, candidate sentences were identified using a \textbf{WordNet-derived lexicon} \cite{miller:95} of potentially nature-related terms. Each sentence was assigned a density score, based on the number of candidates it contained, and grouped into four bands (0, 1, 2, 3+). The final sample was stratified across these bands to ensure both sparse and entity-rich sentences were represented. This step was fully automatic and served only to guide sentence sampling; manual annotation began after the 305-sentence sample had been fixed. \\ \\
 
 Since WordNet does not consider context, \textbf{spaCy} part-of-speech tagging restricted candidates to noun mentions, which were then manually verified (particularly for figurative and archaic terms). The \textbf{manual annotation} followed project-specific guidelines developed before and refined during the process. The resulting gold-standard dataset contains 795 entity mentions across five categories: flora, fauna, weather, landscape, and Nature.
 
 \subsection{BERT Fine-Tuning for NER}
-A pretrained BERT model \cite{devlin:19} was fine-tuned for token-level classification to identify and classify non-human entities using the annotated dataset. A supervised, span-based approach was chosen because the project requires the model to identify entity spans and assign them to a domain-specific category. Therefore, BERT was fine-tuned using the \textbf{BIO tagging scheme} \cite{ramshaw:95}: each token is labeled B- (beginning), I-(inside), or O (outside an entity), allowing multi-word entities such as West Wind to be represented as single spans.
+A pretrained BERT model \cite{devlin:19} was fine-tuned for token-level classification to identify and classify non-human entities using the annotated dataset. A supervised, span-based approach was chosen because the project requires the model to identify entity spans and assign them to a domain-specific category. Therefore, BERT was fine-tuned using the \textbf{BIO tagging scheme} \cite{ramshaw:95}: each token is labeled B- (beginning), I-(inside), or O (outside an entity), allowing multi-word entities such as \textit{West Wind} to be represented as single spans.
 
 The resulting label set comprises eleven classes: O for non-entity tokens, and B-/I- labels for each of the five categories. Since BERT’s tokenizer may split words into multiple subword units, only the first one receives a label, with subsequent subwords excluded from the loss and evaluation. Before training, the BIO representation was independently validated by decoding labels back into character-level spans and comparing them with the original annotations to catch boundary inconsistencies beforehand.
 
@@ -194,7 +194,7 @@ Because BERT accepts a maximum of 512 tokens, longer texts are divided into sent
 \section{Discussion}
 The central findings – the convergence between semantic definition and syntactic behavior and the particularly high rate of active-subject positioning for NATURE – provide a syntactic perspective on an established ecocritical observation: Romantic poetry can represent nature as capable of independent action rather than merely as a passive background \cite{bate:91}. Since NATURE was defined during annotation solely on semantic grounds, independently of grammatical structure, this convergence cannot be attributed to a circular definition.
 
-Several \textbf{limitations} should be considered when interpreting these findings. First, \textbf{NATURE} is the least reliably recognized category in the final model: its F1 falls from 0.58 to 0.24 after thresholding. This suggests the model’s confidence scores were not a reliable correctness signal for this category. The 34.1\% active-subject rate should therefore be read as indicative rather than precise, resting on the project’s smallest, least stable, and least reliably recognized category.
+Several \textbf{limitations} should be considered when interpreting these findings. First, \textbf{NATURE} is the least reliably recognized category in the final model: its F1 falls from 0.58 to 0.24 after thresholding. This suggests the model’s confidence scores were not a reliable correctness signal for this category. The 34.1\% active-subject rate should therefore be read as indicative rather than precise, resting on the project’s smallest and least stable category.
 
 Second, annotation was performed by a \textbf{single annotator}, preventing calculation of inter-annotator agreement. Third, the corpus is strongly weighted towards \textbf{poetry} (eleven of thirteen passages), whose inversion, ellipsis, and compressed syntax create particular difficulties for dependency parsing. Finally, the \textbf{small dataset} prevented the use of a fully independent test set, although k-fold cross-validation provided a practical solution for this low-resource setting.
 
