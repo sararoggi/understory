@@ -7,11 +7,11 @@ This document serves as the methodological record for the annotation process, de
 
 | Category | Definition | Typical words |
 |---|---|---|
-| **FLORA** | Individual plants, trees, flowers, or vegetation | tree, oak, flower, moss, grove, foliage |
+| **FLORA** | Individual plants, trees, flowers, or vegetation | tree, oak, moss, grove, foliage |
 | **FAUNA** | Animals, birds, insects - literal, non-human creatures | albatross, bird, snake |
-| **WEATHER** | Weather, atmospherical and celestial phenomena | wind, storm, rain, cloud, ice, sun, moon, stars, sky |
-| **LANDSCAPE** | Topographic / geological features, including named places | river, mountain, glacier, lake, rock, Mont Blanc, the Jungfrau |
-| **NATURE** | Personified nature as a unified, animating force. This includes direct abstract addresses, named spirit-characters, or forces described without the specific word "Nature." | "Nature, thou great..."; "the Witch of the Alps" |
+| **WEATHER** | Weather, atmospherical and celestial phenomena | wind, storm, ice, sun, moon, sky |
+| **LANDSCAPE** | Topographic / geological features, including named places | river, mountain, glacier, rock, Mont Blanc, Jungfrau |
+| **NATURE** | Personified nature as a unified force. This includes direct abstract addresses, named spirit-characters, or forces described without the specific word "Nature." | "Nature, thou great..."; "the Witch of the Alps" |
 
 
 ## 2. What counts as a mention (span rules)

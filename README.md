@@ -47,7 +47,7 @@ notebooks/llm_analysis.ipynb         →  cross-genre LLM simulation, compared a
 | **FAUNA** | Animals, birds - literal, non-human creatures |
 | **WEATHER** | Weather, atmospheric, and celestial phenomena |
 | **LANDSCAPE** | Topographic and geological features, including named places |
-| **NATURE** | Personified nature-as-force - embodied spirit-characters, pantheistic animating forces |
+| **NATURE** | Personified nature as a unified force |
 
 Full annotation methodology is documented in [`docs/annotation_guidelines.md`](docs/annotation_guidelines.md).
 
